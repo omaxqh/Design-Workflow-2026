@@ -1,0 +1,87 @@
+{
+  "runId": "20260515-1724-hotel-card-88vip-promo-badge",
+  "createdAt": "2026-05-15T17:24:53+08:00",
+  "updatedAt": "2026-05-15T17:48:20+08:00",
+  "status": "failed",
+  "currentState": "handoff",
+  "requestSummary": "在 Figma 文件“实验过程”中，将页面内所有酒店卡片 / 酒店信息区 / 价格优惠区 / 优惠条 / 异型优惠标签（LIST.HOTEL_CARD.SPECIAL_PROMO_BADGE#HUNDRED_BILLION_SUBSIDY）的内容改为“88VIP优惠”。",
+  "globalAssumptions": [
+    "用户明确要求修改页面中的所有匹配项，因此无需在同名元素存在多个实例时暂停确认。",
+    "这是修改已有页面内容，不新增模块或页面。"
+  ],
+  "tasks": [
+    {
+      "taskId": "task-001",
+      "requestSummary": "将所有 LIST.HOTEL_CARD.SPECIAL_PROMO_BADGE#HUNDRED_BILLION_SUBSIDY 的显示内容改为“88VIP优惠”。",
+      "routeType": "modify_existing_page",
+      "target": {
+        "figmaFile": "实验过程",
+        "fileKey": "2lR44ejHpqt1wwnk9LUJgx",
+        "page": "88VIP会员模块小闭环-修改",
+        "nodeId": "221:2280",
+        "module": "酒店卡片 / 酒店信息区 / 价格优惠区 / 优惠条",
+        "element": "异型优惠标签 | LIST.HOTEL_CARD.SPECIAL_PROMO_BADGE#HUNDRED_BILLION_SUBSIDY"
+      },
+      "contextRead": {
+        "productRules": [],
+        "pageRules": [
+          "AGENTS.md",
+          "WORKFLOW_AGENT.md",
+          "STATE_AND_RESOURCES.md",
+          "CHECKLISTS.md",
+          "PROMPTS.md",
+          "figma design agent 页面级设计规范.md"
+        ],
+        "productSpecConstraints": [],
+        "pageSpecConstraints": [],
+          "figmaNodes": [
+            "221:2280 列表｜LIST",
+            "I221:2287;6789:60153;6789:60026 异型优惠标签",
+            "I221:2288;6789:60153;6789:60026 异型优惠标签",
+            "I221:2289;6789:60153;6789:60026 异型优惠标签",
+            "I221:2290;6789:60153;6789:60026 异型优惠标签"
+          ],
+        "components": [],
+        "variables": [
+          "color_pay_1 #ff5533",
+          "color_darkgray #0f131a",
+          "color_label #f7f8fa",
+          "20px/R_140%(caption)",
+          "24px/R_140%(body3)",
+          "30px/M_140%(subtitle)"
+        ],
+        "referenceAssets": []
+      },
+      "proposalImage": {
+        "required": false,
+        "prompt": "",
+        "referenceImages": [],
+        "imagePathOrUrl": "",
+        "userConfirmation": "not_required",
+        "visualAnchors": [],
+        "decorativeAssetCandidates": [],
+        "specConflicts": []
+      },
+      "decorativeAssets": [],
+      "figmaWrite": {
+        "targetNode": "221:2280",
+        "summary": "已将 4 个异型优惠标签实例的文本从“百亿补贴”改为“88VIP优惠”，但未能恢复原字体。当前 use_figma 环境无法加载本地字体包对应的 FliggyFont Medium Italic / 飞猪旅行体 Medium Italic；后续规则已更新为遇到该标签必须先确认原字体可加载，不可自动降级。",
+        "usedUseFigma": true
+      },
+      "selfCheck": {
+        "content": "pass",
+        "designSystem": "fail",
+        "layout": "pass",
+        "visualMatch": "not_required",
+        "assets": "not_required",
+        "specConstraintsApplied": "not_required",
+        "visualAnchorsCompared": "not_required"
+      },
+      "handoffNotes": "验证结果：目标列表页内旧文案“百亿补贴”数量为 0，新文案“88VIP优惠”数量为 4；4 个优惠条均显示“88VIP优惠 / 万豪会员价 / 2项优惠¥20”。但字体不符合用户补充要求：原字体包已在 macOS 字体册启用，系统识别 family 为“飞猪旅行体”、style 为“Medium Italic”，但 Figma MCP listAvailableFontsAsync 仅返回 Fliggy Sans 102 v250916 Regular，无法加载 FliggyFont Medium Italic 或 飞猪旅行体 Medium Italic。已在 AGENTS.md 写入强制规则：后续遇到该标签必须使用原字体，加载失败时暂停报告，不能自动降级。",
+      "risks": [
+        "原目标文本字体 FliggyFont Medium Italic 在 use_figma 环境不可加载；为完成可编辑文本修改，4 个目标文本改用当前可加载的 Fliggy Sans 102 v250916 Regular。",
+        "组件集中存在 88vip｜LIST.HOTEL_CARD.SPECIAL_PROMO_BADGE#VIP88 变体，但它是 93x24 的矩形资产且不显示“88VIP优惠”文本，因此本次按用户指定内容覆盖目标标签文本。"
+      ]
+    }
+  ]
+}

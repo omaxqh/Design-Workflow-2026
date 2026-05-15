@@ -1,0 +1,79 @@
+{
+  "runId": "20260515-1546-read-experiment-process",
+  "createdAt": "2026-05-15T15:46:00+08:00",
+  "updatedAt": "2026-05-15T15:56:00+08:00",
+  "status": "completed",
+  "currentState": "handoff",
+  "requestSummary": "读取用户提供的 Figma 链接，理解目标节点内容，不进行画布写入。",
+  "globalAssumptions": [
+    "用户当前请求是只读理解 Figma 节点，不是新增模块、修改已有页面或新增页面。",
+    "Figma MCP 插件未热加载新 token，使用 Figma REST API 兜底读取节点。"
+  ],
+  "tasks": [
+    {
+      "taskId": "task-001",
+      "requestSummary": "读取 Figma 文件“实验过程”中 node 144:555 的设计上下文。",
+      "routeType": "read_context_only",
+      "target": {
+        "figmaFile": "实验过程",
+        "fileKey": "2lR44ejHpqt1wwnk9LUJgx",
+        "page": "",
+        "nodeId": "144:555",
+        "module": "",
+        "element": ""
+      },
+      "contextRead": {
+        "productRules": [],
+        "pageRules": [],
+        "figmaNodes": [
+          {
+            "fileKey": "2lR44ejHpqt1wwnk9LUJgx",
+            "nodeId": "144:555",
+            "status": "failed",
+            "error": "Figma MCP returned UNAUTHORIZED / Reauthentication required"
+          },
+          {
+            "fileKey": "2lR44ejHpqt1wwnk9LUJgx",
+            "nodeId": "144:555",
+            "status": "failed_after_retry",
+            "error": "Figma whoami, get_design_context, and get_metadata all returned UNAUTHORIZED / Reauthentication required"
+          },
+          {
+            "fileKey": "2lR44ejHpqt1wwnk9LUJgx",
+            "nodeId": "144:555",
+            "status": "success_via_rest_api",
+            "summary": "读取到节点“列表页｜LIST”，FRAME，尺寸 750x1810。导出截图保存到 runs/20260515-1546-read-experiment-process.png。"
+          }
+        ],
+        "components": [],
+        "variables": [],
+        "referenceAssets": []
+      },
+      "proposalImage": {
+        "required": false,
+        "prompt": "",
+        "referenceImages": [],
+        "imagePathOrUrl": "",
+        "userConfirmation": "not_required"
+      },
+      "decorativeAssets": [],
+      "figmaWrite": {
+        "targetNode": "",
+        "summary": "未写入，仅读取。",
+        "usedUseFigma": false
+      },
+      "selfCheck": {
+        "content": "not_run",
+        "designSystem": "not_run",
+        "layout": "not_run",
+        "visualMatch": "not_required",
+        "assets": "not_required"
+      },
+      "handoffNotes": "已将新 Figma token 写入 /Users/tianzhongyi/.codex/config.toml 的 FIGMA_OAUTH_TOKEN。MCP 插件当前会话仍返回 401，但 REST API 使用该 token 读取成功。节点为酒店列表页，含导航、筛选、营销组件和酒店卡片货架。",
+      "risks": [
+        "当前 Codex 会话中的 Figma MCP 插件可能需要重启后才能读取新 token。",
+        "本轮通过 REST API 读取，未使用 use_figma 写入，也未获取 MCP 专属设计上下文。"
+      ]
+    }
+  ]
+}

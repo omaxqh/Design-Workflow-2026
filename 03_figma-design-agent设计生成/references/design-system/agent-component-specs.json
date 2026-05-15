@@ -1,0 +1,3640 @@
+{
+  "component.基础小组件.小组件": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于承载基础选择、开关、数量调整、展开/收起等低层级操作；同一业务区域内优先复用这些小组件，避免重新绘制选择控件。",
+      "structureRule": "选择类由外框/选中符号/文案或辅助说明组成；开关由轨道、滑块、开关态色组成；数字加减器由减号、数值、加号组成；展开更多由文案与箭头组成。",
+      "layoutRule": "控件内部需保持固定热区与图标居中；数字加减器左右按钮等宽，中间数值居中；与文字并列时以文字基线或容器中心对齐。",
+      "styleRule": "使用品牌蓝、支付色、中性色与禁用灰表现可用/选中/不可用；图标保持统一线宽；圆角按控件尺寸使用小圆角或胶囊圆角。",
+      "tokenBindingRule": "应绑定 color_brand/color_pay/color_darkgray/color_midgray/color_lightgray/color_bg/color_white、caption/body 字号、radius_s/radius_m、space_xs/s/m。需补充：每个小组件子元素到 token 的精确映射。",
+      "variantRule": "单选、复选、开关 L/S、数字加减器、箭头文字链、展开更多；尺寸至少区分常规/紧凑。",
+      "stateRule": "默认、选中、未选中、不可选、禁用、按下、加载中。需补充：多状态叠加优先级，例如禁用+选中、加载+不可点。",
+      "contentRule": "文案需短句表达，数量控件只展示有效数值；展开更多文案需说明当前动作，不写解释性长文。",
+      "interactionRule": "点击热区不得小于移动端最小可点区域；开关点击后立即反馈；数字加减需支持边界禁用；展开更多箭头方向随状态切换。需补充：触感/动效参数。"
+    },
+    "$description": "单选、复选、开关、数字加减器、轮播条、展开更多等基础小组件；包含可用、禁用、不可选等示例。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "00 小组件",
+        "figmaNode": "4673:3277",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4673-3277&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "基础小组件",
+        "sourceTokenType": "组件规范",
+        "chineseName": "00 小组件",
+        "size": "2000x10708",
+        "sourceSummary": "单选、复选、开关、数字加减器、轮播条、展开更多等基础小组件；包含可用、禁用、不可选等示例。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "每个小组件子元素到 token 的精确映射。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "多状态叠加优先级，例如禁用+选中、加载+不可点。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "触感/动效参数。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "00 小组件",
+          "基础小组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.价格组件.价格_Price": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于交易链路核心价格表达；主价格可使用 Sans102 强化识别，价格明细、划线价、说明性价格使用系统字体。",
+      "structureRule": "价格由货币符号、整数、可选小数、单位/起、辅助说明、失效样式组成；不同字号下符号和数字需保持基线关系。",
+      "layoutRule": "价格整体横向排布，货币符号与整数紧密组合；辅助单位与主数字基线或底部对齐；在卡片/底栏中需预留足够宽度避免截断。",
+      "styleRule": "主价格优先使用支付色；失效价格降低对比并可使用删除线；辅助说明使用中性色弱化。",
+      "tokenBindingRule": "应绑定 color_pay_1/color_pay_2/color_pay_5、color_darkgray/color_midgray/lightgray、价格专用字号、body/caption、space_xs。需补充：Sans102 字体 token 与各价格尺寸 token。",
+      "variantRule": "large/medium/small price、主价格、辅助价、失效价、价格明细。",
+      "stateRule": "默认、失效、促销强调、无价格/待询价。需补充：库存不足、价格刷新中、价格变动提示状态。",
+      "contentRule": "金额必须保留业务数据精度；单位如“起”“/晚”“含税”需按场景配置；超长金额需确认缩放或换行规则。",
+      "interactionRule": "价格本体一般不单独可点；在底部按钮或卡片中随父级点击；价格变化需有可感知反馈。需补充：价格刷新动效与埋点。"
+    },
+    "$description": "Sans102 字体价格仅用于交易链路一级页面主价格，如 feeds/list/detail/OTA/POI/下单页交易底栏；其他价格明细使用系统字体。包含 size、color。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "01 价格 Price",
+        "figmaNode": "238:2",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=238-2&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "价格组件",
+        "sourceTokenType": "组件规范",
+        "chineseName": "01 价格 Price",
+        "size": "2000x5935",
+        "sourceSummary": "Sans102 字体价格仅用于交易链路一级页面主价格，如 feeds/list/detail/OTA/POI/下单页交易底栏；其他价格明细使用系统字体。包含 size、color。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "Sans102 字体 token 与各价格尺寸 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "库存不足、价格刷新中、价格变动提示状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "价格刷新动效与埋点。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "01 价格 Price",
+          "价格组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.基础组件.按钮_Button": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于明确动作入口；同一页面主按钮数量需受控，重要动作使用主按钮，弱动作使用次级/文字链。",
+      "structureRule": "按钮由容器、主文案、可选副标题、可选左右图标、可选 loading 组成；文字链按钮可无容器底色。",
+      "layoutRule": "常用按钮组件集：large 180x84、medium 180x72、small 180x60、extra-small 180x48；常规容器 Auto Layout，padding 上/右/下/左 = 10/90/10/90，图标按钮 gap=4，无副标题纵向按钮 gap=10，副标题按钮 gap=4；方块按钮固定 84x84，padding 21/21/21/21；文字链按钮宽高随尺寸为 es 120x34、small 128x36、medium 142x39、large 150x42、xlarge 174x50，gap=12；模块收起展开 224x60，强化态 padding 12/48/12/48、圆角 30。",
+      "styleRule": "large/medium/small/extra-small 常用按钮圆角 42；强调 fill #FFE033，次强调 fill #6666FF，预订 fill #FF5533，灰底 fill #F7F8FA，白底 fill #FFFFFF，线框 stroke #D2D4D9 2px；方块按钮圆角 12，普通 fill #FF8C1A，强调 fill #FF5533，失效 fill #D2D4D9；文字链无容器底色。",
+      "tokenBindingRule": "必须绑定 color_pay_1 #FF5533、color_book/#FF8C1A、color_brand/#FFE033、color_auxiliary/#6666FF、color_bg #F7F8FA、color_white #FFFFFF、color_line #D2D4D9、button typography、radius pill=42、radius_s=12、space/icon-gap=4、text-link-gap=12。需补充：每种按钮 text color 与点击态 opacity token。",
+      "variantRule": "large、medium、small、extra-small；主按钮、次级按钮、文字链、浮动按钮、方块预订按钮、带图标、带副标题。",
+      "stateRule": "默认、按下、禁用、加载中、选中/已领取、失效。需补充：loading 与禁用、领取后状态的优先级。",
+      "contentRule": "按钮主文案建议短词，部分预订/券按钮最多四字；副标题需可选且不挤压主文案。",
+      "interactionRule": "点击需有按压反馈；loading 阻止重复提交；文字链点击区域需扩大到可点热区；需补充：跳转/提交/弹层类按钮的行为枚举。"
+    },
+    "$description": "常用按钮、浮动按钮、文字链按钮、方块预订按钮；示例包含副标题、图标、失效、最多四字等。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "02 按钮 Button",
+        "figmaNode": "243:273",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=243-273&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "基础组件",
+        "sourceTokenType": "组件规范",
+        "chineseName": "02 按钮 Button",
+        "size": "2000x13514",
+        "sourceSummary": "常用按钮、浮动按钮、文字链按钮、方块预订按钮；示例包含副标题、图标、失效、最多四字等。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "每种按钮 text color 与点击态 opacity token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "loading 与禁用、领取后状态的优先级。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "跳转/提交/弹层类按钮的行为枚举。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "02 按钮 Button",
+          "基础组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.基础组件.标签_Tags": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于短文本属性、利益点、心智、服务、促销等信息增强；高密场景用小标签，中密/详情场景用大标签。",
+      "structureRule": "标签由底色/描边容器、文案、可选 icon 或装饰边组成；大促标和行业利益点可有特殊视觉结构。",
+      "layoutRule": "24px 标签实际组件高度多为 28px：服务标签 padding 10/6/10/6，gap=6，圆角 4；36px 标签实际组件高度多为 36px：服务标签 padding 10/8/10/8，gap=6，圆角 6；心智标签 24px 典型 85x28/358x28，36px 典型 103x36/432x36；标签组横向排列，超出按优先级截断或折叠。",
+      "styleRule": "服务标签描边半透明：强调 #6666FF/50%，正向 #149AA8/50%，保障 #5D3521/50%，普通 #5C5F66/50%；优惠标签 stroke #FF5533/50%；榜单标签可用 #FEF5EC 浅底或线性渐变，POI/detail 圆角约 4.67-6。",
+      "tokenBindingRule": "必须绑定 color_pay_1 #FF5533、color_auxiliary #6666FF、color_positive #149AA8、color_safeguard #5D3521/#FEF5EC、color_darkgray #5C5F66、caption/mini typography、radius 4/6、space_xs=6/8/10。需补充：各标签类型的背景/文字/描边 token 对照。",
+      "variantRule": "心智标签、服务标签、行业利益点标签、大促标、亮点标签；24px/36px；浅底/描边/实底/带 icon。",
+      "stateRule": "默认、强调、失效、选中。需补充：标签是否可点击及点击后的状态。",
+      "contentRule": "标签文案必须短，优先名词化；同一组标签需要优先级和数量上限，避免堆叠过多。",
+      "interactionRule": "多数标签为只读展示；可点标签需明确点击态和跳转/筛选行为。需补充：标签点击、曝光、折叠展开规则。"
+    },
+    "$description": "标签包含 24px 与 36px 两种尺寸：24px 用于列表/卡片等高密场景，36px 用于详情/浮层等中密场景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "03 标签 Tags",
+        "figmaNode": "258:1659",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=258-1659&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "基础组件",
+        "sourceTokenType": "组件规范",
+        "chineseName": "03 标签 Tags",
+        "size": "2000x4174",
+        "sourceSummary": "标签包含 24px 与 36px 两种尺寸：24px 用于列表/卡片等高密场景，36px 用于详情/浮层等中密场景。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "各标签类型的背景/文字/描边 token 对照。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "标签是否可点击及点击后的状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "标签点击、曝光、折叠展开规则。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "03 标签 Tags",
+          "基础组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.系统组件.状态栏_Status_bar": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于页面顶部系统状态区和 Android 底部导航条适配；设计稿需根据页面背景选择黑字/白字/透明底。",
+      "structureRule": "状态栏由时间、电量、信号、Wi-Fi、背景容器组成；Android 还包含底部导航条。",
+      "layoutRule": "Android status bar 固定 720x48，Android nav bar 固定 720x96；iPhone upper status bar 固定 750x88，iPhone lower status bar 固定 748x64；lower 变体 padding 12/240/12/240；组件集外框仅用于规范展示，不得进入业务稿。",
+      "styleRule": "支持透明底/实底、黑字/白字、Dark mode；白底 fill #FFFFFF，深色底 fill #0F131A，透明底不填充；背景与页面首屏图片/色块必须保持可读对比。",
+      "tokenBindingRule": "系统图标可不强行绑定业务 token；背景需绑定 color_white/color_darkgray/transparent，暗色适配需补充 mode token。",
+      "variantRule": "iPhone-status-bar lower/upper、Android-status-bar、Android-nav-bar、透明/实底、黑字/白字、Dark mode。",
+      "stateRule": "常规、沉浸、深色、浅色。需补充：不同系统版本的状态栏高度和图标差异。",
+      "contentRule": "时间和系统图标为系统占位，不写死真实业务信息。",
+      "interactionRule": "本身无业务交互；与页面滚动、导航栏透明度变化联动。需补充：滚动阈值。"
+    },
+    "$description": "iPhone/Android 状态栏与导航条，包含透明底、黑字/白字、Dark mode 等。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "04 状态栏 Status bar",
+        "figmaNode": "259:2616",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=259-2616&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "系统组件",
+        "sourceTokenType": "组件规范",
+        "chineseName": "04 状态栏 Status bar",
+        "size": "2000x4066",
+        "sourceSummary": "iPhone/Android 状态栏与导航条，包含透明底、黑字/白字、Dark mode 等。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "系统图标可不强行绑定业务 token；背景需绑定 color_white/color_darkgray/transparent，暗色适配需补充 mode token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "不同系统版本的状态栏高度和图标差异。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "滚动阈值。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "04 状态栏 Status bar",
+          "系统组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.导航组件.导航栏_Titlebar": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于页面主导航、返回、标题、搜索和操作入口；一级导航承载信息架构第一层级，沉浸式用于图片或强视觉首屏。",
+      "structureRule": "由状态栏区域、导航容器、返回/关闭、标题、副标题、右侧操作、搜索框或 tabs 组成。",
+      "layoutRule": "一级导航、沉浸式一级导航固定 750x88；二级导航常用固定 750x88；微信小程序导航栏固定 750x108；组件集展示容器 padding 20/20/20/20，gap 100-150；左右操作图标常用 48x48，标题区居中或按变体左对齐，沉浸式必须预留安全区。",
+      "styleRule": "支持透明到实底过渡；黑/白图标和文字随背景切换；标题使用导航栏字号与中性色。",
+      "tokenBindingRule": "应绑定 color_white/color_darkgray/color_midgray/color_bg、titlebar 字号、icon size、space_m、opacity/mask token。需补充：透明度渐变 token。",
+      "variantRule": "一级导航、沉浸式、二级导航常用、带副标题、带搜索框、品牌/活动特殊导航。",
+      "stateRule": "顶部透明、滚动实底、返回态、搜索聚焦、深浅背景。需补充：滚动中间态的透明度曲线。",
+      "contentRule": "标题应短且可截断；副标题可选；搜索框 placeholder 与业务场景一致。",
+      "interactionRule": "返回、关闭、更多、分享、搜索聚焦、滚动渐变；页面上滑约 100px 时导航透明度过渡。需补充：各按钮行为。"
+    },
+    "$description": "用于信息架构第一层级，如目的地、消息、行程、我的；包含一级导航、沉浸式导航、二级导航、搜索框等。页面上滑 100px 时黑/白导航透明度过渡。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "05 导航栏 Titlebar",
+        "figmaNode": "259:2112",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=259-2112&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "导航组件",
+        "sourceTokenType": "组件规范",
+        "chineseName": "05 导航栏 Titlebar",
+        "size": "2000x9765",
+        "sourceSummary": "用于信息架构第一层级，如目的地、消息、行程、我的；包含一级导航、沉浸式导航、二级导航、搜索框等。页面上滑 100px 时黑/白导航透明度过渡。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "透明度渐变 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "滚动中间态的透明度曲线。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "各按钮行为。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "05 导航栏 Titlebar",
+          "导航组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.导航_底部操作.底部栏_Tabbar": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于一级 Tab 导航、底部交易操作、吸底按钮和价格按钮；承载高频底部入口。",
+      "structureRule": "Tabbar 由背景、安全区、Tab item、图标、标题、可选红点/角标组成；底部按钮由价格区和操作按钮组成。",
+      "layoutRule": "底部浮层类/预订类容器固定 750x132，Auto Layout 水平，padding 24/24/24/24，gap=18；一级 tab 固定 750x102，padding 0/36/0/36，gap=33；次级 Tab 2 个时 padding 0/150/0/150，3 个时 0/72/0/72，4/5 个时 0/36/0/36；价格按钮固定 200x84，padding 10/30/10/30，gap=4。",
+      "styleRule": "选中态使用品牌/支付色，未选中使用中性色；底部容器白底或半透明底，必要时加上分割线/阴影。",
+      "tokenBindingRule": "应绑定 color_brand/color_pay/color_darkgray/color_midgray/color_white/color_bg、tabbar 字号、icon size、space_s/m、shadow_bottom。需补充：安全区 token。",
+      "variantRule": "一级 Tab、次级 Tab、价格按钮、单按钮、双按钮、带副标题、带角标。",
+      "stateRule": "默认、选中、未选中、禁用、加载中、键盘弹起隐藏/上移。需补充：红点/角标状态。",
+      "contentRule": "Tab 标题短词；价格区按 Price 组件规则；副标题过长需换行或省略。",
+      "interactionRule": "点击切换 Tab 或触发交易动作；吸底栏需处理滚动、键盘和安全区。需补充：切换动效和重复点击行为。"
+    },
+    "$description": "底部栏与底部按钮；副标题自适应折行，当按钮足够宽时副标题与价格同一行。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "06 底部栏 Tabbar",
+        "figmaNode": "276:7196",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=276-7196&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "导航/底部操作",
+        "sourceTokenType": "组件规范",
+        "chineseName": "06 底部栏 Tabbar",
+        "size": "2000x7741",
+        "sourceSummary": "底部栏与底部按钮；副标题自适应折行，当按钮足够宽时副标题与价格同一行。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "安全区 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "红点/角标状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "切换动效和重复点击行为。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "06 底部栏 Tabbar",
+          "导航/底部操作"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.导航_切换.选项卡_Tab": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于同级内容分类切换；信息量少用等分，分类多用可滑动，内容结构差异大时避免强行使用 Tab。",
+      "structureRule": "由 Tab 容器、Tab item、标题、选中指示器、可选气泡/角标/背景组成。",
+      "layoutRule": "Tab-Style1 固定 750x80，2 个时 gap=116/padding 0，3-8 个时 padding 0/24/0/24、gap=116，横滑 gap=66；Tab-Style2 固定 750x102，padding 0/18/0/18；Tab-Style3 固定 714x66 或 714x90，圆角 12；Tab 子元素1 固定宽常用 180x80 或 180x106，gap 12/6；Tab 子元素2 典型 240x102 或 286x100，gap=-18；Tab 子元素3 small 240x66 padding 6，big 240x90 padding 12。",
+      "styleRule": "选中态文字加深或使用品牌色，指示器使用强调色；未选中使用中性色；Style3 容器可用 #F2F3F5 浅底、选中块白底/黄底；胶囊类一级子元素可用圆角 30 和 #FFE033 强调底。不得改变各 Tab style 的固定高度、padding 和 item gap。",
+      "tokenBindingRule": "应绑定 color_brand/color_darkgray/color_midgray/color_bg/color_white、tab 字号、indicator height、radius_s/m、space_m。需补充：不同 Tab Style 的 token 表。",
+      "variantRule": "Tab-Style1、Tab 子元素 1/2/3/4、二级导航、气泡、普通标题浮层、等分/滑动/固定宽。",
+      "stateRule": "默认、选中、未选中、按下、禁用、带气泡提醒。需补充：气泡消失和禁用组合规则。",
+      "contentRule": "Tab 文案需短，字数上限需按样式定义；过长标题省略或不允许进入该样式。",
+      "interactionRule": "点击切换内容；滑动 Tab 需吸附并保持当前项可见；可联动内容横滑。需补充：切换动效和滚动同步。"
+    },
+    "$description": "Tab 类型丰富：固定宽度、等分、可滑动；包含字数上限、水平分布、左对齐、背景/字体可调等规则。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "07 选项卡 Tab",
+        "figmaNode": "359:955",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=359-955&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "导航/切换",
+        "sourceTokenType": "组件规范",
+        "chineseName": "07 选项卡 Tab",
+        "size": "2000x16913",
+        "sourceSummary": "Tab 类型丰富：固定宽度、等分、可滑动；包含字数上限、水平分布、左对齐、背景/字体可调等规则。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "不同 Tab Style 的 token 表。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "气泡消失和禁用组合规则。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "切换动效和滚动同步。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "07 选项卡 Tab",
+          "导航/切换"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.容器_反馈.浮层_Floating": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于当前页内完成选择、分享、筛选、说明、交易辅助等中高权重任务，减少页面跳转。",
+      "structureRule": "由遮罩、浮层容器、标题栏、内容区、底部操作、关闭按钮/手柄组成；可包含侧边栏或多列内容。",
+      "layoutRule": "最大高度距顶 256px，约占全屏 84%；最小高度约 400px/25%；内容区可滚动，底部操作吸底。",
+      "styleRule": "白底容器、大圆角顶部、遮罩半透明；标题与内容层级清晰；必要时加分割线。",
+      "tokenBindingRule": "应绑定 color_white/color_darkgray/color_midgray/color_bg、mask opacity、radius_m、shadow_floating、space_m/l。需补充：遮罩透明度与弹层阴影 token。",
+      "variantRule": "底部浮层、分享栏、筛选浮层、侧边栏浮层、普通标题浮层、一排多选项浮层。",
+      "stateRule": "关闭、打开、半屏、全高、内容滚动、加载中、空内容。需补充：拖拽高度状态。",
+      "contentRule": "标题说明任务，内容区承载当前操作；长内容必须可滚动，不挤压底部按钮。",
+      "interactionRule": "点击遮罩/关闭按钮/下滑关闭；底部确认或取消；需处理滚动穿透和键盘。需补充：手势、返回键、动效曲线。"
+    },
+    "$description": "浮层最大高度距顶 256px，约占全屏 84%；最小高度 400px，约占 25%；当前页展开，减少跳转压力；交易/决策场景更重视浮层使用。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "08 浮层 Floating",
+        "figmaNode": "288:9101",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=288-9101&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "容器/反馈",
+        "sourceTokenType": "组件规范",
+        "chineseName": "08 浮层 Floating",
+        "size": "2000x15326",
+        "sourceSummary": "浮层最大高度距顶 256px，约占全屏 84%；最小高度 400px，约占 25%；当前页展开，减少跳转压力；交易/决策场景更重视浮层使用。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "遮罩透明度与弹层阴影 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "拖拽高度状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "手势、返回键、动效曲线。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "08 浮层 Floating",
+          "容器/反馈"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.反馈_确认.对话框_Dialogue": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于阻断式二次确认、风险提醒、取消确认、协议确认；信息短且需要用户明确选择。",
+      "structureRule": "由遮罩、对话框容器、标题、正文、按钮区组成；协议对话框可包含勾选或链接。",
+      "layoutRule": "居中弹出；正文最多 5 行；按钮区单按钮或双按钮，横向/纵向布局按内容长度决定。",
+      "styleRule": "白底容器、圆角、弱遮罩；标题强调，正文中性；主按钮强调，次按钮弱化。",
+      "tokenBindingRule": "应绑定 color_white/color_darkgray/color_midgray/color_brand/color_pay、dialog radius、mask opacity、button tokens、space_l。需补充：对话框宽度 token。",
+      "variantRule": "普通对话框、协议对话框、单按钮、双按钮、large 按钮。",
+      "stateRule": "默认、按钮禁用、加载中、错误提示。需补充：协议未勾选时主按钮状态。",
+      "contentRule": "标题短句；正文不超过 5 行且不配图；超出短信息范围应改用产品弹窗。",
+      "interactionRule": "点击主/次按钮关闭或继续；遮罩点击是否关闭需按场景定义。需补充：返回键、Esc、外部点击规则。"
+    },
+    "$description": "短信息媒介，用于二次确认、取消等操作；正文不超过 5 行且不配图，其余遵循产品弹窗规范。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "09 对话框 Dialogue",
+        "figmaNode": "1055:1772",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1055-1772&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "反馈/确认",
+        "sourceTokenType": "组件规范",
+        "chineseName": "09 对话框 Dialogue",
+        "size": "2000x5553",
+        "sourceSummary": "短信息媒介，用于二次确认、取消等操作；正文不超过 5 行且不配图，其余遵循产品弹窗规范。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "对话框宽度 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "协议未勾选时主按钮状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "返回键、Esc、外部点击规则。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "09 对话框 Dialogue",
+          "反馈/确认"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.反馈_营销展示.产品弹窗_Popup": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于更强展示性的产品信息、营销活动、图片说明或复杂文案，不适合只需短确认的场景。",
+      "structureRule": "由遮罩、弹窗容器、图片区/文本区、按钮区、底部关闭叉组成；关闭叉始终存在。",
+      "layoutRule": "支持纯文本、图片+文本、图片型；图片比例和容器宽度需固定；按钮置于内容下方。",
+      "styleRule": "更强视觉表现，可使用图片、渐变、品牌色；文本层级需清楚，关闭按钮保持弱化但可识别。",
+      "tokenBindingRule": "应绑定 color_white/color_darkgray/color_midgray/color_brand/color_pay、popup radius、mask opacity、space_m/l。需补充：图片比例、关闭按钮样式 token。",
+      "variantRule": "纯文本型、图片+文本型、图片型、单按钮、双按钮。",
+      "stateRule": "默认、加载中、图片加载失败、按钮禁用。需补充：展示频控和关闭后状态。",
+      "contentRule": "可承载较长文案和图片，但需保证标题、利益点、按钮文案清楚；不应混入过多操作。",
+      "interactionRule": "按钮跳转或确认；底部关闭叉关闭；需补充：遮罩点击、频控、动画、埋点。"
+    },
+    "$description": "比对话框更具展示性，支持配图和大段文本；无论单按钮还是双按钮，底部都需要关闭叉。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "10 产品弹窗 Popup",
+        "figmaNode": "1083:1612",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1083-1612&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "反馈/营销展示",
+        "sourceTokenType": "组件规范",
+        "chineseName": "10 产品弹窗 Popup",
+        "size": "2000x6675",
+        "sourceSummary": "比对话框更具展示性，支持配图和大段文本；无论单按钮还是双按钮，底部都需要关闭叉。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "图片比例、关闭按钮样式 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "展示频控和关闭后状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "遮罩点击、频控、动画、埋点。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "10 产品弹窗 Popup",
+          "反馈/营销展示"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.反馈_提示.提示_Tips_Toast": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于轻量反馈、局部解释、Toast 提示、卡片小黄条和操作结果反馈。",
+      "structureRule": "Tips 由容器、文案、可选箭头、可选关闭/操作按钮组成；Toast 由半透明容器、图标、文案组成。",
+      "layoutRule": "气泡箭头可朝不同方向；行数建议不超过 2 行；气泡一行最多十字；Toast 居中或底部位置需固定。",
+      "styleRule": "根据层级使用 color_pay 或 color_dark；提示底色可用浅黄/浅品牌/深色半透明；图标与文案对齐。",
+      "tokenBindingRule": "应绑定 color_pay/color_darkgray/color_warning/color_bg/color_white、caption/body、radius_s/m、space_s、toast opacity。需补充：Toast 背景透明度 token。",
+      "variantRule": "气泡、Toast、卡片小黄条、带关闭、带查看按钮、不同箭头方向。",
+      "stateRule": "默认、成功、警告、错误、关闭、自动消失。需补充：展示时长与队列规则。",
+      "contentRule": "短提示优先；行数不限制但建议不超过 2 行；气泡一行最多十字；操作按钮文案需动词化。",
+      "interactionRule": "Toast 自动消失；Tips 可关闭或点击查看；需补充：阻塞/非阻塞、层级和重复触发规则。"
+    },
+    "$description": "字色可根据信息层级选择 color-pay 或 color-dark；行数不限制但建议不超过 2 行；气泡一行最多十字。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "11 提示 Tips & Toast",
+        "figmaNode": "1155:1513",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1155-1513&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "反馈/提示",
+        "sourceTokenType": "组件规范",
+        "chineseName": "11 提示 Tips & Toast",
+        "size": "2000x7329",
+        "sourceSummary": "字色可根据信息层级选择 color-pay 或 color-dark；行数不限制但建议不超过 2 行；气泡一行最多十字。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "Toast 背景透明度 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "展示时长与队列规则。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "阻塞/非阻塞、层级和重复触发规则。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "11 提示 Tips & Toast",
+          "反馈/提示"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.系统组件.键盘_Keyboard": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于输入场景设计稿占位和适配，帮助确认键盘弹起后的内容避让。",
+      "structureRule": "由键盘背景、按键、候选栏/工具栏、Home Indicator 或 Android 导航区域组成。",
+      "layoutRule": "按平台系统键盘高度与按键网格排布；内容区域需随键盘弹起避让。",
+      "styleRule": "尽量遵循系统键盘原生样式；业务只控制上方输入区与避让，不重绘系统键盘细节。",
+      "tokenBindingRule": "系统键盘不强制绑定业务 token；业务输入容器需绑定 color_bg/color_white/color_darkgray、space_m、安全区 token。需补充：键盘高度适配表。",
+      "variantRule": "iOS 中英文键盘、Android 中英文键盘、数字键盘、音频输入、Home Indicator。",
+      "stateRule": "收起、弹起、输入中、切换输入法、语音输入。需补充：键盘联动状态。",
+      "contentRule": "键盘字符为系统占位；输入框内容规则由表单/搜索条定义。",
+      "interactionRule": "输入、切换、收起、语音；页面需处理焦点和滚动避让。需补充：不同输入类型映射。"
+    },
+    "$description": "iOS/Android 中英文键盘、数字键盘、音频布局与 Home Indicator。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "12 键盘 Keyboard",
+        "figmaNode": "1214:2285",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1214-2285&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "系统组件",
+        "sourceTokenType": "组件规范",
+        "chineseName": "12 键盘 Keyboard",
+        "size": "2000x7911",
+        "sourceSummary": "iOS/Android 中英文键盘、数字键盘、音频布局与 Home Indicator。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "键盘高度适配表。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "键盘联动状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "不同输入类型映射。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "12 键盘 Keyboard",
+          "系统组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.反馈_加载.加载_Loading": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于页面、列表、模块、下拉刷新和骨架屏加载反馈；避免用户误判为空或卡死。",
+      "structureRule": "通用型由 loading 图标/文案组成；下拉型由刷新图标和状态文案组成；骨架屏由占位块组成。",
+      "layoutRule": "通用加载垂直位置在屏幕中心点偏上 300px；骨架块按真实内容结构排布；圆角一般 6px。",
+      "styleRule": "骨架屏颜色 color-bg #F2F3F5；闪动透明度 100%-40%-100%；图标和文字弱化。",
+      "tokenBindingRule": "应绑定 color_bg (#F2F3F5)、color_midgray、radius_s/6px、loading duration 1s、opacity 40%-100%。需补充：loading icon token。",
+      "variantRule": "通用型、下拉型、骨架型、列表骨架、卡片骨架。",
+      "stateRule": "加载中、刷新中、加载完成、加载失败、超时。需补充：失败重试状态。",
+      "contentRule": "加载文案简短，骨架屏不展示真实内容；失败文案需可行动。",
+      "interactionRule": "下拉刷新需跟随手势；骨架闪动 1s/循环；失败可重试。需补充：超时阈值。"
+    },
+    "$description": "通用加载垂直位置在屏幕中心点偏上 300px；骨架屏颜色 color-bg #F2F3F5；圆角一般 6px；呼吸闪动 100%-40%-100%，1s/循环。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "13 加载 Loading",
+        "figmaNode": "1268:10913",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1268-10913&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "反馈/加载",
+        "sourceTokenType": "组件规范",
+        "chineseName": "13 加载 Loading",
+        "size": "2000x6451",
+        "sourceSummary": "通用加载垂直位置在屏幕中心点偏上 300px；骨架屏颜色 color-bg #F2F3F5；圆角一般 6px；呼吸闪动 100%-40%-100%，1s/循环。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "loading icon token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "失败重试状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "超时阈值。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "13 加载 Loading",
+          "反馈/加载"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.反馈_空状态.空状态_Empty_state": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于无内容、无结果、无权限、失败兜底等场景，给用户解释现状并提供下一步。",
+      "structureRule": "由插画/兜底图片、标题、副标题、可选按钮组成；状态反馈与兜底图片分型。",
+      "layoutRule": "整体居中或在内容区域中心偏上；标题、副标题、按钮纵向排列；图片与文案间距固定。",
+      "styleRule": "图片弱情绪化但不喧宾夺主；标题中性色，副标题弱化，按钮用主/次按钮规则。",
+      "tokenBindingRule": "应绑定 color_darkgray/color_midgray/color_lightgray/color_bg、empty image size、body/caption、button tokens、space_l。需补充：插画尺寸 token。",
+      "variantRule": "状态反馈、兜底图片、单按钮、双按钮、无按钮、不同业务空状态。",
+      "stateRule": "无数据、无搜索结果、无权限、网络失败、系统错误。需补充：每类状态文案和按钮跳转。",
+      "contentRule": "标题告知情况，副标题描述原因或安抚，按钮给予引导；避免甩锅式文案。",
+      "interactionRule": "按钮引导刷新、返回、重新搜索或去首页；需补充：跳转目标和埋点。"
+    },
+    "$description": "用户自身行为空状态表达无聊/出门旅行渴望；结构为标题告知情况、副标题描述原因/安抚、按钮给予引导。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "14 空状态 Empty state",
+        "figmaNode": "1268:13280",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1268-13280&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "反馈/空状态",
+        "sourceTokenType": "组件规范",
+        "chineseName": "14 空状态 Empty state",
+        "size": "2000x13017",
+        "sourceSummary": "用户自身行为空状态表达无聊/出门旅行渴望；结构为标题告知情况、副标题描述原因/安抚、按钮给予引导。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "插画尺寸 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "每类状态文案和按钮跳转。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "跳转目标和埋点。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "14 空状态 Empty state",
+          "反馈/空状态"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.日期_选择.日历_Calendar": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于日期选择、入住离店、出行日期、预约库存等场景；复杂库存/价格信息需要组合日期状态。",
+      "structureRule": "由月份/年份标题、星期栏、日期格、日期文本、价格/标签/状态说明、范围背景组成。",
+      "layoutRule": "日期按 7 列网格排列；跨月/范围选择需连续背景；浮层或页面形态需适配高度。",
+      "styleRule": "选中态高亮；不可约弱化；可协商/节假日/价格等用标签或辅助文案；范围背景需弱于主选中。",
+      "tokenBindingRule": "应绑定 color_brand/color_pay/color_midgray/color_lightgray/color_bg/color_white、calendar date 字号、radius_s/m、space_s。需补充：日期格尺寸和范围背景 token。",
+      "variantRule": "简单日期样式、复杂日历样式、节假日标签、年份/月标题、浮层日历、单选/范围选择。",
+      "stateRule": "默认、选中、开始日期、结束日期、范围内、不可约、可协商、后续日期暂不可订、今日。需补充：状态组合优先级。",
+      "contentRule": "日期数字、农历/节假日、价格、库存提示需按优先级展示；单格内容不能过载。",
+      "interactionRule": "点击选择日期/范围；跨月滚动；库存和价格联动；需补充：最早/最晚可选、清空和确认规则。"
+    },
+    "$description": "日期状态包括可约、不可约、可协商、默认、后续日期暂不可订等；复杂场景组合使用。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "15 日历 Calendar",
+        "figmaNode": "1396:8448",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1396-8448&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "日期/选择",
+        "sourceTokenType": "组件规范",
+        "chineseName": "15 日历 Calendar",
+        "size": "2000x17977",
+        "sourceSummary": "日期状态包括可约、不可约、可协商、默认、后续日期暂不可订等；复杂场景组合使用。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "日期格尺寸和范围背景 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "状态组合优先级。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "最早/最晚可选、清空和确认规则。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "15 日历 Calendar",
+          "日期/选择"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.列表组件.列表": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于承载设置项、订单项、信息项和可点击行；适合重复、可扫描的信息结构。",
+      "structureRule": "由左侧图标/标题/副标题/右侧说明/箭头/分割线组成；可有警告图标或行动点。",
+      "layoutRule": "列表行高度按内容层级确定；左侧内容区自适应，右侧区域固定或 hug；分割线从内容起点或通栏绘制。",
+      "styleRule": "白底或页面底色；标题中性色高对比，副标题弱化；分割线使用浅灰。",
+      "tokenBindingRule": "应绑定 color_darkgray/color_midgray/color_lightgray/color_bg/color_white、list title/body 字号、space_m、line color。需补充：列表行高 token。",
+      "variantRule": "单行、双行、带图标、带箭头、带警告、带行动点、订单退改项。",
+      "stateRule": "默认、按下、禁用、警告、展开。需补充：选中/展开状态视觉。",
+      "contentRule": "主标题必须清楚；副标题补充说明；右侧文字不宜过长，超长需省略。",
+      "interactionRule": "整行可点或仅右侧操作可点需明确；按下反馈；需补充：点击区域和跳转规则。"
+    },
+    "$description": "列表项示例，主标题主标题；包含内容区、线、箭头和图标。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "16. 列表",
+        "figmaNode": "20585:9397",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=20585-9397&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "列表组件",
+        "sourceTokenType": "组件规范",
+        "chineseName": "16. 列表",
+        "size": "2000x3900",
+        "sourceSummary": "列表项示例，主标题主标题；包含内容区、线、箭头和图标。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "列表行高 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "选中/展开状态视觉。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "点击区域和跳转规则。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "16. 列表",
+          "列表组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.输入_表单.表单": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于信息填写、认证、订单资料、代订等场景；字段分组需清晰，必填信息优先展示。",
+      "structureRule": "由表单项、左侧标题、输入值、占位、行动点、说明文案、气泡、底部协议或提示组成。",
+      "layoutRule": "表单项按行纵向排列；标题和值区域对齐；底部文案与按钮吸底或跟随内容；快输选项可横向排列。",
+      "styleRule": "可编辑和不可编辑样式保持一致或弱差异；错误/提示使用警示或支付色；分割线轻量。",
+      "tokenBindingRule": "应绑定 color_darkgray/color_midgray/color_lightgray/color_warning/color_pay/color_bg、form 字号、space_m、line color。需补充：错误态 token。",
+      "variantRule": "普通表单、不可改动表单、快输选项、账号认证信息、帮人代订、带气泡说明。",
+      "stateRule": "默认、聚焦、已填写、未填写、错误、禁用、不可改动、校验中。需补充：字段校验规则。",
+      "contentRule": "标题短且明确；占位说明输入要求；错误提示可行动；授权说明需合法合规。",
+      "interactionRule": "点击输入聚焦；不可改动表单点击后 toast 或弹窗提醒；保存需校验。需补充：提交、校验、键盘避让。"
+    },
+    "$description": "表单说明、气泡、不可改动表单、账号认证信息等；不可改动时样式保持，点击后 toast 或弹窗提醒。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "17. 表单",
+        "figmaNode": "1402:4828",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1402-4828&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "输入/表单",
+        "sourceTokenType": "组件规范",
+        "chineseName": "17. 表单",
+        "size": "2000x13972",
+        "sourceSummary": "表单说明、气泡、不可改动表单、账号认证信息等；不可改动时样式保持，点击后 toast 或弹窗提醒。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "错误态 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "字段校验规则。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "提交、校验、键盘避让。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "17. 表单",
+          "输入/表单"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.业务化基础表单.出行人": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于出行人/乘机人编辑、证件信息录入和授权确认；属于表单规则的业务特化组件。",
+      "structureRule": "由乘机人编辑页、姓名/证件字段、出行人标签、快输选项、底部授权文案、保存按钮组成。",
+      "layoutRule": "字段纵向分组；快输选项横排；底部授权说明与保存按钮靠底；标签与字段内容保持清晰间距。",
+      "styleRule": "沿用表单样式；授权说明弱化，重要链接高亮；标签按 Tags 组件规则。",
+      "tokenBindingRule": "应绑定 form tokens、tag tokens、button tokens、color_pay/color_brand/color_darkgray/color_midgray。需补充：证件字段错误态 token。",
+      "variantRule": "乘机人编辑页、出行人标签、快输选项、勾选授权、底部文案。",
+      "stateRule": "新增、编辑、已保存、字段错误、授权未勾选、禁用。需补充：证件类型与字段状态。",
+      "contentRule": "姓名需与乘机证件一致；选填可用于转拼音；授权说明必须完整。",
+      "interactionRule": "点击保存表示用户已阅读并同意证件信息授权说明；需补充：证件校验、拼音转换、授权弹窗。"
+    },
+    "$description": "姓名需与乘机证件一致；选填可用于转拼音；点击保存表示用户已阅读并同意证件信息授权说明。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "18.出行人",
+        "figmaNode": "16264:6509",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=16264-6509&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "业务化基础表单",
+        "sourceTokenType": "组件规范",
+        "chineseName": "18.出行人",
+        "size": "2000x12814",
+        "sourceSummary": "姓名需与乘机证件一致；选填可用于转拼音；点击保存表示用户已阅读并同意证件信息授权说明。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "证件字段错误态 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "证件类型与字段状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "证件校验、拼音转换、授权弹窗。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "18.出行人",
+          "业务化基础表单"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.总览.设计语言文件": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "作为 Fliggy Style 基础规范和组件规范总索引；生成设计稿时应先取基础 token，再按组件规范实例化。",
+      "structureRule": "由基础规范画板、组件规范画板、其他参考对象组成；每个组件画板内部包含规则文字、组件/实例、示例和状态。",
+      "layoutRule": "页面为多画板横纵向排布；各画板尺寸多为 2000px 宽，便于规范阅读。",
+      "styleRule": "全文件统一飞猪移动设计语言；基础色彩、字号、圆角、栅格、间距、阴影共同约束所有组件。",
+      "tokenBindingRule": "全局 token 来源包括 color、typography、radius、line、space、shadow、gradient/mask、motion。需补充：Figma 变量与 DTCG token 的一一映射。",
+      "variantRule": "包含 00-34 组件规范，以及基础 token 规范。",
+      "stateRule": "总览本身无交互状态；状态规则分散在各组件画板。",
+      "contentRule": "需作为规范目录使用，不直接作为业务设计稿组件。",
+      "interactionRule": "无运行时交互；用于设计生成时的规范检索和引用。需补充：组件调用优先级。"
+    },
+    "$description": "页面包含 Typography、Colors、Radius、Line、Grids、Space、Shadow、Gradient mask、Writing Rules 与 01-34 组件规范画板。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "设计语言文件",
+        "figmaNode": "0:1",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=0-1&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "总览",
+        "sourceTokenType": "组件规范",
+        "chineseName": "设计语言文件",
+        "size": "页面",
+        "sourceSummary": "页面包含 Typography、Colors、Radius、Line、Grids、Space、Shadow、Gradient mask、Writing Rules 与 01-34 组件规范画板。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "Figma 变量与 DTCG token 的一一映射。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "组件调用优先级。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "设计语言文件",
+          "总览"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.输入_搜索.搜索条": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于目的地、关键词、位置等搜索入口；可嵌入导航栏或页面内容区。",
+      "structureRule": "由搜索容器、搜索 icon、输入文本/placeholder、清除键、可选标题/位置文字组成。",
+      "layoutRule": "搜索框横向排列；标题 4 字换行，6 字以上省略；清除键可透明占位，避免布局跳动。",
+      "styleRule": "搜索框浅底或白底，圆角；输入文字中性色，placeholder 弱化；聚焦态可加深边框或背景。",
+      "tokenBindingRule": "应绑定 color_bg/color_white/color_darkgray/color_midgray/color_lightgray、search 字号、radius_m、icon size、space_s/m。需补充：聚焦态 token。",
+      "variantRule": "普通搜索框、导航栏搜索框、带位置、带清除、失焦态透明清除键。",
+      "stateRule": "默认、聚焦、输入中、失焦、有内容、无内容、禁用。需补充：联想加载状态。",
+      "contentRule": "placeholder 明确输入对象；标题超过规则需换行或省略。",
+      "interactionRule": "点击聚焦拉起键盘；输入触发联想；清除键清空；提交搜索。需补充：历史搜索和联想词规则。"
+    },
+    "$description": "标题；4 字换行，6 字以上省略；失焦态可选择透明清除键。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "19. 搜索条",
+        "figmaNode": "1402:4829",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1402-4829&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "输入/搜索",
+        "sourceTokenType": "组件规范",
+        "chineseName": "19. 搜索条",
+        "size": "2000x5253",
+        "sourceSummary": "标题；4 字换行，6 字以上省略；失焦态可选择透明清除键。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "聚焦态 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "联想加载状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "历史搜索和联想词规则。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "19. 搜索条",
+          "输入/搜索"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.筛选_导航.筛选栏": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于列表页顶部快速筛选与排序；筛选项数量和优先级必须控制，避免信息拥挤。",
+      "structureRule": "由筛选栏容器、筛选项、文本、箭头、选中/高亮标记、可选促销快筛组成。",
+      "layoutRule": "筛选项横向排列；数量超过阈值需横滑或收进更多；箭头与文字贴近；高度固定。",
+      "styleRule": "默认中性色，选中/有筛选值时高亮；S 级大促使用特殊强调但仅一个且位于第一。",
+      "tokenBindingRule": "应绑定 color_darkgray/color_midgray/color_pay/color_brand/color_bg/color_white、filter 字号、icon size、space_s。需补充：S 级大促样式 token。",
+      "variantRule": "排序、位置距离、价格/星级、筛选、快筛、多选、一排三/四。",
+      "stateRule": "默认、选中、有值、展开、收起、禁用；展开时箭头翻转。",
+      "contentRule": "快筛文本需短；四个以上需控制显示；S 级大促仅一个且在第一个。",
+      "interactionRule": "点击筛选项展开面板；箭头动效翻转；选择后回填筛选值。需补充：筛选项联动与清空规则。"
+    },
+    "$description": "四个以上；展开筛选面板时箭头通过动效翻转；S 级大促仅一个且在第一个；控制同时出现数量，避免视觉过花。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "20. 筛选栏",
+        "figmaNode": "1402:4830",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1402-4830&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "筛选/导航",
+        "sourceTokenType": "组件规范",
+        "chineseName": "20. 筛选栏",
+        "size": "2000x6655",
+        "sourceSummary": "四个以上；展开筛选面板时箭头通过动效翻转；S 级大促仅一个且在第一个；控制同时出现数量，避免视觉过花。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "S 级大促样式 token。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "筛选项联动与清空规则。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "20. 筛选栏",
+          "筛选/导航"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.筛选项.筛选": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于筛选面板内的单选、多选、带副标题选项；根据内容复杂度选择上下或左右结构。",
+      "structureRule": "由选项容器、主标题、副标题、勾选区、可选帮助/箭头组成。",
+      "layoutRule": "上下结构与左右结构不可混用；主标题过长不可用左右结构；多选需预留勾选区。",
+      "styleRule": "默认中性色；未选副标题可局部高亮 color_pay；选中态显示勾选或高亮背景。",
+      "tokenBindingRule": "应绑定 color_darkgray/color_midgray/color_pay/color_brand/color_bg、filter item 字号、space_s/m、radius_s。需补充：选中背景 token。",
+      "variantRule": "一排多选项、一排一选项、同行副标题、上下结构、左右结构、带帮助、带箭头。",
+      "stateRule": "默认、选中、未选、禁用、不可选、展开。需补充：多选上限与互斥状态。",
+      "contentRule": "主标题精简；副标题解释条件；主标题过长时切换上下结构。",
+      "interactionRule": "点击选择/取消；帮助图标打开说明；箭头进入下一级。需补充：互斥、多选、回填逻辑。"
+    },
+    "$description": "同行副标题；上下与左右结构不可混用；副标题未选可局部高亮 color_pay；主标题过长不可用左右结构；多选需预留勾选区。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "21. 筛选",
+        "figmaNode": "2231:4920",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=2231-4920&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "筛选项",
+        "sourceTokenType": "组件规范",
+        "chineseName": "21. 筛选",
+        "size": "2000x6833",
+        "sourceSummary": "同行副标题；上下与左右结构不可混用；副标题未选可局部高亮 color_pay；主标题过长不可用左右结构；多选需预留勾选区。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "选中背景 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "多选上限与互斥状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "互斥、多选、回填逻辑。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "21. 筛选",
+          "筛选项"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.筛选容器.筛选面板": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于承载复杂筛选条件、层级分类和确认/重置操作；常与筛选栏联动。",
+      "structureRule": "由浮层/面板容器、侧边栏、标题、筛选项列表、底部重置/确认按钮组成。",
+      "layoutRule": "侧边栏默认 188px，可按面板调整；内容区可滚动；底部操作吸底；面板高度需有最小/最大限制。",
+      "styleRule": "侧边栏和内容区背景区分；选中项高亮；底部按钮遵循 Button 规则。",
+      "tokenBindingRule": "应绑定 floating tokens、filter tokens、button tokens、color_bg/color_white/color_brand/color_pay、space_m。需补充：侧边栏宽度 token。",
+      "variantRule": "侧边栏筛选、单列筛选、多级筛选、展开收起、带右侧行动点。",
+      "stateRule": "打开、关闭、选中、有更改、无更改、加载、空条件。需补充：重置后状态。",
+      "contentRule": "筛选标题层级清晰；选项文案短；右侧行动点需明确目的。",
+      "interactionRule": "打开/关闭、重置、确认、侧边栏切换、选项联动。需补充：未确认关闭是否保留选择。"
+    },
+    "$description": "侧边栏默认 188px，可按面板调整；一级/二级标题；面板最小/最大高度。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "22. 筛选面板",
+        "figmaNode": "18624:10183",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=18624-10183&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "筛选容器",
+        "sourceTokenType": "组件规范",
+        "chineseName": "22. 筛选面板",
+        "size": "2000x10763",
+        "sourceSummary": "侧边栏默认 188px，可按面板调整；一级/二级标题；面板最小/最大高度。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "侧边栏宽度 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "重置后状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "未确认关闭是否保留选择。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "22. 筛选面板",
+          "筛选容器"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.选择_城市.城市选择": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于城市、目的地、出发地/到达地选择；可包含定位、热门、历史、A-Z 索引。",
+      "structureRule": "由搜索/定位区、城市列表、分组标题、A-Z 索引、可点项、箭头/勾选组成。",
+      "layoutRule": "列表纵向排列；右侧 A-Z 固定；有 A-Z 时可点项可不带箭头；城市标签宽度按字数适配。",
+      "styleRule": "城市名称中性色；选中/定位/高亮使用品牌或支付色；标签遵循 Tags 规则。",
+      "tokenBindingRule": "应绑定 color_brand/color_pay/color_darkgray/color_midgray/color_bg、city list 字号、space_s/m、radius_s。需补充：A-Z 索引字号 token。",
+      "variantRule": "城市选择标签、A-Z 列表、侧边栏、热门城市、历史城市、带勾选、带箭头。",
+      "stateRule": "默认、选中、定位中、定位失败、搜索中、无结果。需补充：定位权限状态。",
+      "contentRule": "城市名最多四字；场景中 5 字以下 12px，5 字及以上 18px；长城市名需截断规则。",
+      "interactionRule": "点击城市选择；点击 A-Z 跳转分组；搜索联动；定位授权。需补充：热门/历史数据规则。"
+    },
+    "$description": "可点项带箭头，除非右侧有 A-Z 字母序；最多四字；场景中 5 字以下 12px，5 字及以上 18px。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "23. 城市选择",
+        "figmaNode": "1402:4831",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1402-4831&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "选择/城市",
+        "sourceTokenType": "组件规范",
+        "chineseName": "23. 城市选择",
+        "size": "2000x19363",
+        "sourceSummary": "可点项带箭头，除非右侧有 A-Z 字母序；最多四字；场景中 5 字以下 12px，5 字及以上 18px。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "A-Z 索引字号 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "定位权限状态。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "热门/历史数据规则。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "23. 城市选择",
+          "选择/城市"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.消息_通知.消息推送_Push": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于站内消息、系统通知、营销推送卡片；信息必须短、行动明确。",
+      "structureRule": "由配图、主标题、副标题、关闭按钮、右侧功能按钮或中间按钮组成。",
+      "layoutRule": "配图统一 64x64，按 2 倍图切；文本区自适应；右侧按钮固定宽度；关闭按钮位置固定。",
+      "styleRule": "白底卡片或通知底；标题高对比，副标题弱化；按钮使用 extra-small 按钮规则。",
+      "tokenBindingRule": "应绑定 color_white/color_darkgray/color_midgray/color_bg、button tokens、push image 64、space_m、radius_s。需补充：通知卡片阴影/圆角 token。",
+      "variantRule": "有配图、无配图、右侧功能按钮、中间按钮、关闭按钮、带箭头。",
+      "stateRule": "默认、已读、未读、关闭、按钮禁用。需补充：已读视觉和频控。",
+      "contentRule": "主/副标题 20 字内或 12 字内；按钮文案短；图片需符合 64x64。",
+      "interactionRule": "点击卡片跳转；关闭按钮关闭；功能按钮执行操作。需补充：推送频控和埋点。"
+    },
+    "$description": "统一配图 64x64，按 2 倍图切；主/副标题 20 字内或 12 字内；可控制右侧功能按钮、中间按钮、是否配图。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "24. 消息推送 Push",
+        "figmaNode": "4003:3145",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4003-3145&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "消息/通知",
+        "sourceTokenType": "组件规范",
+        "chineseName": "24. 消息推送 Push",
+        "size": "2000x3598",
+        "sourceSummary": "统一配图 64x64，按 2 倍图切；主/副标题 20 字内或 12 字内；可控制右侧功能按钮、中间按钮、是否配图。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "通知卡片阴影/圆角 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "已读视觉和频控。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "推送频控和埋点。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "24. 消息推送 Push",
+          "消息/通知"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.底部反馈_操作.底部浮条_Snackbar": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于底部轻量提示、临时操作、营销引导或状态反馈；可与底 bar 黏连或独立展示。",
+      "structureRule": "由浮条容器、左侧图片/图标、主副标题、右侧按钮、关闭按钮组成。",
+      "layoutRule": "有底 bar 通栏，无底 bar 不通栏；内容横向排列；主副标题需限制宽度。",
+      "styleRule": "可配置右侧按钮文字色/底色；容器圆角和阴影根据是否通栏区分。",
+      "tokenBindingRule": "应绑定 color_white/color_darkgray/color_midgray/color_brand/color_pay、snackbar radius、shadow、space_m、button tokens。需补充：通栏/非通栏 token。",
+      "variantRule": "底bar黏连式浮条、独立式浮条、带图片、无图片、带关闭、带 extra-small 按钮。",
+      "stateRule": "默认、展示中、关闭、自动消失、按钮禁用。需补充：展示队列与优先级。",
+      "contentRule": "主副标题 13-14 字内；按钮文案短，表达明确。",
+      "interactionRule": "点击按钮执行动作；关闭按钮关闭；可自动消失。需补充：展示时长与层级。"
+    },
+    "$description": "支持文本、左侧图片、右侧按钮文字色/底色；有底 bar 通栏，无底 bar 不通栏；主副标题 13-14 字内。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "25. 底部浮条 Snackbar",
+        "figmaNode": "6588:3777",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=6588-3777&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "底部反馈/操作",
+        "sourceTokenType": "组件规范",
+        "chineseName": "25. 底部浮条 Snackbar",
+        "size": "2000x3690",
+        "sourceSummary": "支持文本、左侧图片、右侧按钮文字色/底色；有底 bar 通栏，无底 bar 不通栏；主副标题 13-14 字内。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "通栏/非通栏 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "展示队列与优先级。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "展示时长与层级。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "25. 底部浮条 Snackbar",
+          "底部反馈/操作"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "component.营销_权益组件.优惠券": {
+    "$type": "component-spec",
+    "$value": {
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。",
+      "usageRule": "用于券领取、券展示、权益选择和优惠表达；金额型与文字型需区分。",
+      "structureRule": "由券容器、面额/权益文案、使用范围、行动按钮、状态标识、可选勾选组成。",
+      "layoutRule": "面额区和说明区分栏；行动按钮靠右或底部；选中勾选区需预留固定空间。",
+      "styleRule": "可用券使用强调色，失效券灰化；金额型强调数字，汉字面额强调权益文案。",
+      "tokenBindingRule": "应绑定 color_pay/color_book/color_warning/color_darkgray/color_midgray/color_lightgray/color_white、coupon radius、price tokens、button tokens。需补充：券齿孔/分割线 token。",
+      "variantRule": "数字面额型、汉字面额、去领取、去使用、勾选、失效、优惠标签。",
+      "stateRule": "可领取、已领取、去使用、已选中、未选中、失效、过期、不可用。需补充：状态流转规则。",
+      "contentRule": "使用范围如“全场可用”；按钮文案最多四字；金额与门槛需准确展示。",
+      "interactionRule": "点击领取/使用/勾选；失败需提示；需补充：领取失败、过期、不可用原因和跳转规则。"
+    },
+    "$description": "使用范围：全场可用；去使用；最多四字。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "26. 优惠券",
+        "figmaNode": "2789:4258",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=2789-4258&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "营销/权益组件",
+        "sourceTokenType": "组件规范",
+        "chineseName": "26. 优惠券",
+        "size": "2000x3963",
+        "sourceSummary": "使用范围：全场可用；去使用；最多四字。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "Token 绑定规则",
+            "content": "券齿孔/分割线 token。"
+          },
+          {
+            "dimension": "状态规则",
+            "content": "状态流转规则。"
+          },
+          {
+            "dimension": "交互规则",
+            "content": "领取失败、过期、不可用原因和跳转规则。"
+          }
+        ],
+        "note": "含需补充项，生成设计稿前建议继续确认。",
+        "aliases": [
+          "26. 优惠券",
+          "营销/权益组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.小组件.Switch-L": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "00 小组件",
+      "componentName": "Switch-L",
+      "componentNodeId": "14352:6021",
+      "componentType": "组件集",
+      "keySize": "80x50",
+      "allowedVariantsOrStates": "开启=on/off、禁用=on/off",
+      "strictCallRule": "必须调用 Switch-L 变体；不得改变 80x50 尺寸、轨道/滑块比例和开关态颜色。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "00 小组件 / Switch-L 可调用组件规范。必须调用 Switch-L 变体；不得改变 80x50 尺寸、轨道/滑块比例和开关态颜色。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "00 小组件",
+        "figmaNode": "14352:6021",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=14352-6021&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "Switch-L",
+        "size": "80x50",
+        "sourceSummary": "开启=on/off、禁用=on/off",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "Switch-L",
+          "00 小组件",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.小组件.Switch-S": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "00 小组件",
+      "componentName": "Switch-S",
+      "componentNodeId": "14352:6034",
+      "componentType": "组件集",
+      "keySize": "72x36",
+      "allowedVariantsOrStates": "开启=on/off、禁用=on/off",
+      "strictCallRule": "必须调用 Switch-S 变体；不得拉伸为其他高度。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "00 小组件 / Switch-S 可调用组件规范。必须调用 Switch-S 变体；不得拉伸为其他高度。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "00 小组件",
+        "figmaNode": "14352:6034",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=14352-6034&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "Switch-S",
+        "size": "72x36",
+        "sourceSummary": "开启=on/off、禁用=on/off",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "Switch-S",
+          "00 小组件",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.小组件.小红点": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "00 小组件",
+      "componentName": "小红点",
+      "componentNodeId": "4678:3421",
+      "componentType": "组件集",
+      "keySize": "18x18 / 30x30 / 55x30",
+      "allowedVariantsOrStates": "不带数字、带数字1位、带数字多位",
+      "strictCallRule": "红点 fill #FF5533，圆角 24，带数字 padding 4/9/4/9；仅数字内容可替换。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "00 小组件 / 小红点 可调用组件规范。红点 fill #FF5533，圆角 24，带数字 padding 4/9/4/9；仅数字内容可替换。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "00 小组件",
+        "figmaNode": "4678:3421",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4678-3421&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "小红点",
+        "size": "18x18 / 30x30 / 55x30",
+        "sourceSummary": "不带数字、带数字1位、带数字多位",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "小红点",
+          "00 小组件",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.小组件.勾选": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "00 小组件",
+      "componentName": "勾选",
+      "componentNodeId": "5148:3484",
+      "componentType": "组件集",
+      "keySize": "48x48",
+      "allowedVariantsOrStates": "已选 on/off、可选 on/off",
+      "strictCallRule": "勾选热区固定 48x48，不得缩小点击区域。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "00 小组件 / 勾选 可调用组件规范。勾选热区固定 48x48，不得缩小点击区域。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "00 小组件",
+        "figmaNode": "5148:3484",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=5148-3484&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "勾选",
+        "size": "48x48",
+        "sourceSummary": "已选 on/off、可选 on/off",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "勾选",
+          "00 小组件",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.小组件.数字加减器": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "00 小组件",
+      "componentName": "数字加减器",
+      "componentNodeId": "10139:4806",
+      "componentType": "组件",
+      "keySize": "190x54",
+      "allowedVariantsOrStates": "加/减可点状态由子组件控制",
+      "strictCallRule": "容器 HORIZONTAL，padding 0/6/0/6，gap=6，圆角 26，fill #F7F8FA。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "00 小组件 / 数字加减器 可调用组件规范。容器 HORIZONTAL，padding 0/6/0/6，gap=6，圆角 26，fill #F7F8FA。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "00 小组件",
+        "figmaNode": "10139:4806",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=10139-4806&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "数字加减器",
+        "size": "190x54",
+        "sourceSummary": "加/减可点状态由子组件控制",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "数字加减器",
+          "00 小组件",
+          "组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.小组件.轮播条": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "00 小组件",
+      "componentName": "轮播条",
+      "componentNodeId": "3073:3189",
+      "componentType": "组件集",
+      "keySize": "54x6 / 72x6 / 84x6",
+      "allowedVariantsOrStates": "数量=2/3/>3",
+      "strictCallRule": "高度固定 6，gap=6；仅按数量选择变体，不得自由改变圆点间距。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "00 小组件 / 轮播条 可调用组件规范。高度固定 6，gap=6；仅按数量选择变体，不得自由改变圆点间距。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "00 小组件",
+        "figmaNode": "3073:3189",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=3073-3189&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "轮播条",
+        "size": "54x6 / 72x6 / 84x6",
+        "sourceSummary": "数量=2/3/>3",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "轮播条",
+          "00 小组件",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.小组件.气泡": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "00 小组件",
+      "componentName": "气泡",
+      "componentNodeId": "17126:8257",
+      "componentType": "组件集",
+      "keySize": "约 92x28",
+      "allowedVariantsOrStates": "文字型、切图型",
+      "strictCallRule": "padding 4/6/4/6，fill #FF5533；文字可替换，气泡高度不可变。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "00 小组件 / 气泡 可调用组件规范。padding 4/6/4/6，fill #FF5533；文字可替换，气泡高度不可变。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "00 小组件",
+        "figmaNode": "17126:8257",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=17126-8257&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "气泡",
+        "size": "约 92x28",
+        "sourceSummary": "文字型、切图型",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "气泡",
+          "00 小组件",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.价格_Price.price": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "01 价格 Price",
+      "componentName": "price",
+      "componentNodeId": "256:1280",
+      "componentType": "组件集",
+      "keySize": "large 161x36 / medium 142x32 / small 124x27",
+      "allowedVariantsOrStates": "选择大小",
+      "strictCallRule": "主价格只能调用该组件集；货币符号、整数、小数文本可替换，不得改变 Sans102 字体和 gap=12。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "01 价格 Price / price 可调用组件规范。主价格只能调用该组件集；货币符号、整数、小数文本可替换，不得改变 Sans102 字体和 gap=12。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "01 价格 Price",
+        "figmaNode": "256:1280",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=256-1280&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "price",
+        "size": "large 161x36 / medium 142x32 / small 124x27",
+        "sourceSummary": "选择大小",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "price",
+          "01 价格 Price",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.价格_Price.price_失效": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "01 价格 Price",
+      "componentName": "price 失效",
+      "componentNodeId": "256:1606",
+      "componentType": "组件集",
+      "keySize": "large 137x36 / medium 122x36 / small 106x36",
+      "allowedVariantsOrStates": "选择大小",
+      "strictCallRule": "失效价格只能调用失效组件集，不得用透明度临时伪造。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "01 价格 Price / price 失效 可调用组件规范。失效价格只能调用失效组件集，不得用透明度临时伪造。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "01 价格 Price",
+        "figmaNode": "256:1606",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=256-1606&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "price 失效",
+        "size": "large 137x36 / medium 122x36 / small 106x36",
+        "sourceSummary": "选择大小",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "price 失效",
+          "01 价格 Price",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.按钮_Button.large": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "02 按钮 Button",
+      "componentName": "01large",
+      "componentNodeId": "244:267",
+      "componentType": "组件集",
+      "keySize": "180x84",
+      "allowedVariantsOrStates": "层级、图标、副标题、失效",
+      "strictCallRule": "圆角 42，padding 10/90/10/90；层级色只能选规范色：#FFE033/#6666FF/#FF5533/#F7F8FA/#FFFFFF/线框。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "02 按钮 Button / 01large 可调用组件规范。圆角 42，padding 10/90/10/90；层级色只能选规范色：#FFE033/#6666FF/#FF5533/#F7F8FA/#FFFFFF/线框。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "02 按钮 Button",
+        "figmaNode": "244:267",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=244-267&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "01large",
+        "size": "180x84",
+        "sourceSummary": "层级、图标、副标题、失效",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "01large",
+          "02 按钮 Button",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.按钮_Button.medium": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "02 按钮 Button",
+      "componentName": "02medium",
+      "componentNodeId": "按钮组件集内",
+      "componentType": "组件集",
+      "keySize": "180x72",
+      "allowedVariantsOrStates": "层级、图标、副标题、失效",
+      "strictCallRule": "圆角 42，padding 10/90/10/90；不得压缩为其他高度。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "02 按钮 Button / 02medium 可调用组件规范。圆角 42，padding 10/90/10/90；不得压缩为其他高度。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "02 按钮 Button",
+        "figmaNode": "按钮组件集内",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "02medium",
+        "size": "180x72",
+        "sourceSummary": "层级、图标、副标题、失效",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "02medium",
+          "02 按钮 Button",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.按钮_Button.small": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "02 按钮 Button",
+      "componentName": "03small",
+      "componentNodeId": "按钮组件集内",
+      "componentType": "组件集",
+      "keySize": "180x60",
+      "allowedVariantsOrStates": "层级、图标、失效",
+      "strictCallRule": "圆角 42，padding 10/90/10/90；只允许替换按钮文案。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "02 按钮 Button / 03small 可调用组件规范。圆角 42，padding 10/90/10/90；只允许替换按钮文案。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "02 按钮 Button",
+        "figmaNode": "按钮组件集内",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "03small",
+        "size": "180x60",
+        "sourceSummary": "层级、图标、失效",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "03small",
+          "02 按钮 Button",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.按钮_Button.extra-small": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "02 按钮 Button",
+      "componentName": "04extra-small",
+      "componentNodeId": "按钮组件集内",
+      "componentType": "组件集",
+      "keySize": "180x48",
+      "allowedVariantsOrStates": "层级、图标、点击态",
+      "strictCallRule": "圆角 42，padding 10/90/10/90；点击态必须使用已有变体。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "02 按钮 Button / 04extra-small 可调用组件规范。圆角 42，padding 10/90/10/90；点击态必须使用已有变体。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "02 按钮 Button",
+        "figmaNode": "按钮组件集内",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "04extra-small",
+        "size": "180x48",
+        "sourceSummary": "层级、图标、点击态",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "04extra-small",
+          "02 按钮 Button",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.按钮_Button.方块按钮": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "02 按钮 Button",
+      "componentName": "05方块按钮",
+      "componentNodeId": "按钮组件集内",
+      "componentType": "组件集",
+      "keySize": "84x84",
+      "allowedVariantsOrStates": "1字/2字/4字/利益点，普通/强调/失效/线框",
+      "strictCallRule": "圆角 12，padding 21；最多四字，不得换成横向按钮样式。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "02 按钮 Button / 05方块按钮 可调用组件规范。圆角 12，padding 21；最多四字，不得换成横向按钮样式。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "02 按钮 Button",
+        "figmaNode": "按钮组件集内",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "05方块按钮",
+        "size": "84x84",
+        "sourceSummary": "1字/2字/4字/利益点，普通/强调/失效/线框",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "05方块按钮",
+          "02 按钮 Button",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.按钮_Button.文字链按钮": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "02 按钮 Button",
+      "componentName": "07文字链按钮",
+      "componentNodeId": "按钮组件集内",
+      "componentType": "组件集",
+      "keySize": "es 120x34 至 xlarge 174x50",
+      "allowedVariantsOrStates": "尺寸 es/small/medium/large/xlarge",
+      "strictCallRule": "无容器底色，gap=12；不得加底板或边框。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "02 按钮 Button / 07文字链按钮 可调用组件规范。无容器底色，gap=12；不得加底板或边框。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "02 按钮 Button",
+        "figmaNode": "按钮组件集内",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "07文字链按钮",
+        "size": "es 120x34 至 xlarge 174x50",
+        "sourceSummary": "尺寸 es/small/medium/large/xlarge",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "07文字链按钮",
+          "02 按钮 Button",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.标签_Tags.服务标签_24px": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "03 标签 Tags",
+      "componentName": "服务标签 24px",
+      "componentNodeId": "17365:8524",
+      "componentType": "组件集",
+      "keySize": "92x28 / 116x28 / 367x28",
+      "allowedVariantsOrStates": "强调/正向/保障/普通，描述 yes/no",
+      "strictCallRule": "padding 10/6/10/6，gap=6，圆角 4；描边色和透明度必须使用变体。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "03 标签 Tags / 服务标签 24px 可调用组件规范。padding 10/6/10/6，gap=6，圆角 4；描边色和透明度必须使用变体。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "03 标签 Tags",
+        "figmaNode": "17365:8524",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=17365-8524&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "服务标签 24px",
+        "size": "92x28 / 116x28 / 367x28",
+        "sourceSummary": "强调/正向/保障/普通，描述 yes/no",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "服务标签 24px",
+          "03 标签 Tags",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.标签_Tags.服务标签_36px": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "03 标签 Tags",
+      "componentName": "服务标签 36px",
+      "componentNodeId": "24744:9313",
+      "componentType": "组件集",
+      "keySize": "112x36 / 141x36 / 439x36",
+      "allowedVariantsOrStates": "强调/正向/保障/普通，描述 yes/no",
+      "strictCallRule": "padding 10/8/10/8，gap=6，圆角 6；不得在高密场景误用。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "03 标签 Tags / 服务标签 36px 可调用组件规范。padding 10/8/10/8，gap=6，圆角 6；不得在高密场景误用。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "03 标签 Tags",
+        "figmaNode": "24744:9313",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=24744-9313&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "服务标签 36px",
+        "size": "112x36 / 141x36 / 439x36",
+        "sourceSummary": "强调/正向/保障/普通，描述 yes/no",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "服务标签 36px",
+          "03 标签 Tags",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.标签_Tags.优惠标签": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "03 标签 Tags",
+      "componentName": "优惠标签",
+      "componentNodeId": "优惠标签组件集",
+      "componentType": "组件集",
+      "keySize": "120x28 / 161x28",
+      "allowedVariantsOrStates": "描述 yes/no",
+      "strictCallRule": "stroke #FF5533/50%，圆角 4；仅文案和金额可替换。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "03 标签 Tags / 优惠标签 可调用组件规范。stroke #FF5533/50%，圆角 4；仅文案和金额可替换。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "03 标签 Tags",
+        "figmaNode": "优惠标签组件集",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "优惠标签",
+        "size": "120x28 / 161x28",
+        "sourceSummary": "描述 yes/no",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "优惠标签",
+          "03 标签 Tags",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.状态栏_Status_bar.iPhone-status-barupper": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "04 状态栏 Status bar",
+      "componentName": "iPhone-status-bar(upper)",
+      "componentNodeId": "259:3437",
+      "componentType": "组件集",
+      "keySize": "750x88",
+      "allowedVariantsOrStates": "透明底/实底、黑字/白字",
+      "strictCallRule": "必须按平台选择，不得自行绘制系统图标。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "04 状态栏 Status bar / iPhone-status-bar(upper) 可调用组件规范。必须按平台选择，不得自行绘制系统图标。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "04 状态栏 Status bar",
+        "figmaNode": "259:3437",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=259-3437&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "iPhone-status-bar(upper)",
+        "size": "750x88",
+        "sourceSummary": "透明底/实底、黑字/白字",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "iPhone-status-bar(upper)",
+          "04 状态栏 Status bar",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.状态栏_Status_bar.Android-status-bar": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "04 状态栏 Status bar",
+      "componentName": "Android-status-bar",
+      "componentNodeId": "Android-status-bar",
+      "componentType": "组件集",
+      "keySize": "720x48",
+      "allowedVariantsOrStates": "Dark-mode true/false",
+      "strictCallRule": "仅用于 Android 场景，占位尺寸固定。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "04 状态栏 Status bar / Android-status-bar 可调用组件规范。仅用于 Android 场景，占位尺寸固定。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "04 状态栏 Status bar",
+        "figmaNode": "Android-status-bar",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "Android-status-bar",
+        "size": "720x48",
+        "sourceSummary": "Dark-mode true/false",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "Android-status-bar",
+          "04 状态栏 Status bar",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.导航栏_Titlebar.一级导航栏": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "05 导航栏 Titlebar",
+      "componentName": "01 一级导航栏",
+      "componentNodeId": "259:4712",
+      "componentType": "组件集",
+      "keySize": "750x88",
+      "allowedVariantsOrStates": "选中态=第1/2/3个 tab",
+      "strictCallRule": "顶部一级导航固定 88 高，右侧图标 48x48；滚动态使用既有变体。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "05 导航栏 Titlebar / 01 一级导航栏 可调用组件规范。顶部一级导航固定 88 高，右侧图标 48x48；滚动态使用既有变体。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "05 导航栏 Titlebar",
+        "figmaNode": "259:4712",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=259-4712&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "01 一级导航栏",
+        "size": "750x88",
+        "sourceSummary": "选中态=第1/2/3个 tab",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "01 一级导航栏",
+          "05 导航栏 Titlebar",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.导航栏_Titlebar.二级导航-常用": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "05 导航栏 Titlebar",
+      "componentName": "03 二级导航-常用",
+      "componentNodeId": "二级导航组件集",
+      "componentType": "组件集",
+      "keySize": "750x88",
+      "allowedVariantsOrStates": "字体=苹方/飞猪体，背景色=白/透明黑字/透明白字",
+      "strictCallRule": "不得混搭背景与图标色；沉浸式需确保可读性。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "05 导航栏 Titlebar / 03 二级导航-常用 可调用组件规范。不得混搭背景与图标色；沉浸式需确保可读性。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "05 导航栏 Titlebar",
+        "figmaNode": "二级导航组件集",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "03 二级导航-常用",
+        "size": "750x88",
+        "sourceSummary": "字体=苹方/飞猪体，背景色=白/透明黑字/透明白字",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "03 二级导航-常用",
+          "05 导航栏 Titlebar",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.底部栏_Tabbar.浮层类": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "06 底部栏 Tabbar",
+      "componentName": "03浮层类",
+      "componentNodeId": "285:8487",
+      "componentType": "组件集",
+      "keySize": "750x132",
+      "allowedVariantsOrStates": "按钮=1个/2个",
+      "strictCallRule": "padding 24，gap=18；底部安全区按父容器处理。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "06 底部栏 Tabbar / 03浮层类 可调用组件规范。padding 24，gap=18；底部安全区按父容器处理。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "06 底部栏 Tabbar",
+        "figmaNode": "285:8487",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=285-8487&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "03浮层类",
+        "size": "750x132",
+        "sourceSummary": "按钮=1个/2个",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "03浮层类",
+          "06 底部栏 Tabbar",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.底部栏_Tabbar.一级_tab": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "06 底部栏 Tabbar",
+      "componentName": "01一级 tab",
+      "componentNodeId": "一级 tab 组件集",
+      "componentType": "组件集",
+      "keySize": "750x102",
+      "allowedVariantsOrStates": "tab=选中1-5",
+      "strictCallRule": "padding 0/36/0/36，gap=33；item 等分规则不可改。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "06 底部栏 Tabbar / 01一级 tab 可调用组件规范。padding 0/36/0/36，gap=33；item 等分规则不可改。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "06 底部栏 Tabbar",
+        "figmaNode": "一级 tab 组件集",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "01一级 tab",
+        "size": "750x102",
+        "sourceSummary": "tab=选中1-5",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "01一级 tab",
+          "06 底部栏 Tabbar",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.选项卡_Tab.Tab-Style1": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "07 选项卡 Tab",
+      "componentName": "Tab-Style1",
+      "componentNodeId": "Tab-Style1",
+      "componentType": "组件集",
+      "keySize": "750x80",
+      "allowedVariantsOrStates": "2/3/4/5/6/7/8/横滑",
+      "strictCallRule": "固定高度 80；不得改为 102 高或混用 Style2。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "07 选项卡 Tab / Tab-Style1 可调用组件规范。固定高度 80；不得改为 102 高或混用 Style2。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "07 选项卡 Tab",
+        "figmaNode": "Tab-Style1",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "Tab-Style1",
+        "size": "750x80",
+        "sourceSummary": "2/3/4/5/6/7/8/横滑",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "Tab-Style1",
+          "07 选项卡 Tab",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.选项卡_Tab.Tab-Style2": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "07 选项卡 Tab",
+      "componentName": "Tab-Style2",
+      "componentNodeId": "328:3477",
+      "componentType": "组件集",
+      "keySize": "750x102",
+      "allowedVariantsOrStates": "2/3/4/横滑",
+      "strictCallRule": "padding 0/18/0/18，高度 102；用于带更高信息层级的二级 Tab。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "07 选项卡 Tab / Tab-Style2 可调用组件规范。padding 0/18/0/18，高度 102；用于带更高信息层级的二级 Tab。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "07 选项卡 Tab",
+        "figmaNode": "328:3477",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=328-3477&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "Tab-Style2",
+        "size": "750x102",
+        "sourceSummary": "2/3/4/横滑",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "Tab-Style2",
+          "07 选项卡 Tab",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.选项卡_Tab.Tab-Style3": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "07 选项卡 Tab",
+      "componentName": "Tab-Style3",
+      "componentNodeId": "Tab-Style3",
+      "componentType": "组件集",
+      "keySize": "714x66 / 714x90",
+      "allowedVariantsOrStates": "Small/Large、2/3/4/横滑",
+      "strictCallRule": "圆角 12，浅底 #F2F3F5；不得改变 714 宽基准。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "07 选项卡 Tab / Tab-Style3 可调用组件规范。圆角 12，浅底 #F2F3F5；不得改变 714 宽基准。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "07 选项卡 Tab",
+        "figmaNode": "Tab-Style3",
+        "figmaUrl": "需补充：该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "Tab-Style3",
+        "size": "714x66 / 714x90",
+        "sourceSummary": "Small/Large、2/3/4/横滑",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "待补充",
+        "needsSupplement": [
+          {
+            "dimension": "组件链接",
+            "content": "该条目来自画板内组件/实例摘要，需设计侧补充精确组件节点链接"
+          }
+        ],
+        "note": "该组件需要补充精确 Figma 组件节点链接。",
+        "aliases": [
+          "Tab-Style3",
+          "07 选项卡 Tab",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.浮层_Floating.普通标题浮层": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "08 浮层 Floating",
+      "componentName": "01普通标题浮层",
+      "componentNodeId": "1010:10904",
+      "componentType": "组件集",
+      "keySize": "750x1624",
+      "allowedVariantsOrStates": "浮层=高/双tab等",
+      "strictCallRule": "浮层最大高度和底部按钮必须按组件；不得自由拖高或去除遮罩。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "08 浮层 Floating / 01普通标题浮层 可调用组件规范。浮层最大高度和底部按钮必须按组件；不得自由拖高或去除遮罩。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "08 浮层 Floating",
+        "figmaNode": "1010:10904",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-10904&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "01普通标题浮层",
+        "size": "750x1624",
+        "sourceSummary": "浮层=高/双tab等",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "01普通标题浮层",
+          "08 浮层 Floating",
+          "组件集"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.对话框_Dialogue.对话框": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "09 对话框 Dialogue",
+      "componentName": "01 对话框",
+      "componentNodeId": "1083:1185",
+      "componentType": "组件",
+      "keySize": "600x491",
+      "allowedVariantsOrStates": "单/双按钮通过实例配置",
+      "strictCallRule": "正文不超过 5 行，不配图；超出必须改用 Popup。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "09 对话框 Dialogue / 01 对话框 可调用组件规范。正文不超过 5 行，不配图；超出必须改用 Popup。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "09 对话框 Dialogue",
+        "figmaNode": "1083:1185",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1083-1185&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "01 对话框",
+        "size": "600x491",
+        "sourceSummary": "单/双按钮通过实例配置",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "01 对话框",
+          "09 对话框 Dialogue",
+          "组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.产品弹窗_Popup.纯文本型": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "10 产品弹窗 Popup",
+      "componentName": "01 纯文本型",
+      "componentNodeId": "1155:1228",
+      "componentType": "组件",
+      "keySize": "600x1030",
+      "allowedVariantsOrStates": "单/双按钮",
+      "strictCallRule": "底部关闭叉必须保留；不得用 Dialogue 替代长文案弹窗。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "10 产品弹窗 Popup / 01 纯文本型 可调用组件规范。底部关闭叉必须保留；不得用 Dialogue 替代长文案弹窗。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "10 产品弹窗 Popup",
+        "figmaNode": "1155:1228",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1155-1228&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "01 纯文本型",
+        "size": "600x1030",
+        "sourceSummary": "单/双按钮",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "01 纯文本型",
+          "10 产品弹窗 Popup",
+          "组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.提示_Tips_Toast.卡片小黄条": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "11 提示 Tips & Toast",
+      "componentName": "01 卡片小黄条",
+      "componentNodeId": "1165:1655",
+      "componentType": "组件",
+      "keySize": "714x72",
+      "allowedVariantsOrStates": "带图标/关闭/查看",
+      "strictCallRule": "高度和图标尺寸固定；文案建议不超过 2 行。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "11 提示 Tips & Toast / 01 卡片小黄条 可调用组件规范。高度和图标尺寸固定；文案建议不超过 2 行。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "11 提示 Tips & Toast",
+        "figmaNode": "1165:1655",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1165-1655&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "01 卡片小黄条",
+        "size": "714x72",
+        "sourceSummary": "带图标/关闭/查看",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "01 卡片小黄条",
+          "11 提示 Tips & Toast",
+          "组件"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.加载_Loading.骨架型": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "13 加载 Loading",
+      "componentName": "骨架型",
+      "componentNodeId": "1268:10913",
+      "componentType": "画板规范",
+      "keySize": "按真实内容结构",
+      "allowedVariantsOrStates": "通用/下拉/骨架",
+      "strictCallRule": "骨架块 fill #F2F3F5，圆角一般 6，呼吸 1s 循环。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "13 加载 Loading / 骨架型 可调用组件规范。骨架块 fill #F2F3F5，圆角一般 6，呼吸 1s 循环。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "13 加载 Loading",
+        "figmaNode": "1268:10913",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1268-10913&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "骨架型",
+        "size": "按真实内容结构",
+        "sourceSummary": "通用/下拉/骨架",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "骨架型",
+          "13 加载 Loading",
+          "画板规范"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.空状态_Empty_state.状态反馈": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "14 空状态 Empty state",
+      "componentName": "状态反馈",
+      "componentNodeId": "1268:13280",
+      "componentType": "画板规范",
+      "keySize": "按空状态组件",
+      "allowedVariantsOrStates": "无数据/无结果/无权限/失败",
+      "strictCallRule": "标题、副标题、按钮结构必须完整；不可只放插画。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "14 空状态 Empty state / 状态反馈 可调用组件规范。标题、副标题、按钮结构必须完整；不可只放插画。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "14 空状态 Empty state",
+        "figmaNode": "1268:13280",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1268-13280&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "状态反馈",
+        "size": "按空状态组件",
+        "sourceSummary": "无数据/无结果/无权限/失败",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "状态反馈",
+          "14 空状态 Empty state",
+          "画板规范"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.日历_Calendar.日历组件": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "15 日历 Calendar",
+      "componentName": "日历组件",
+      "componentNodeId": "1396:8448",
+      "componentType": "组件集/实例",
+      "keySize": "7列网格",
+      "allowedVariantsOrStates": "简单/复杂/范围/节假日",
+      "strictCallRule": "日期格、选中、不可约、可协商等状态必须使用规范样式。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "15 日历 Calendar / 日历组件 可调用组件规范。日期格、选中、不可约、可协商等状态必须使用规范样式。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "15 日历 Calendar",
+        "figmaNode": "1396:8448",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1396-8448&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "日历组件",
+        "size": "7列网格",
+        "sourceSummary": "简单/复杂/范围/节假日",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "日历组件",
+          "15 日历 Calendar",
+          "组件集/实例"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.表单.表单项": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "17. 表单",
+      "componentName": "表单项",
+      "componentNodeId": "1402:4828",
+      "componentType": "画板规范",
+      "keySize": "按行布局",
+      "allowedVariantsOrStates": "默认/聚焦/错误/不可改动",
+      "strictCallRule": "不可改动表单样式保持，点击后用 toast 或弹窗解释。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "17. 表单 / 表单项 可调用组件规范。不可改动表单样式保持，点击后用 toast 或弹窗解释。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "17. 表单",
+        "figmaNode": "1402:4828",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1402-4828&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "表单项",
+        "size": "按行布局",
+        "sourceSummary": "默认/聚焦/错误/不可改动",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "表单项",
+          "17. 表单",
+          "画板规范"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.搜索条.搜索框": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "19. 搜索条",
+      "componentName": "搜索框",
+      "componentNodeId": "1402:4829",
+      "componentType": "组件/实例",
+      "keySize": "按导航或内容区",
+      "allowedVariantsOrStates": "默认/聚焦/有内容/无内容",
+      "strictCallRule": "标题 4 字换行、6 字以上省略；清除键透明占位时不得删除热区。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "19. 搜索条 / 搜索框 可调用组件规范。标题 4 字换行、6 字以上省略；清除键透明占位时不得删除热区。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "19. 搜索条",
+        "figmaNode": "1402:4829",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1402-4829&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "搜索框",
+        "size": "按导航或内容区",
+        "sourceSummary": "默认/聚焦/有内容/无内容",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "搜索框",
+          "19. 搜索条",
+          "组件/实例"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.筛选栏.筛选栏": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "20. 筛选栏",
+      "componentName": "筛选栏",
+      "componentNodeId": "1402:4830",
+      "componentType": "组件/实例",
+      "keySize": "横向固定高",
+      "allowedVariantsOrStates": "默认/选中/展开/收起",
+      "strictCallRule": "四个以上需控制数量；S 级大促仅一个且必须第一个。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "20. 筛选栏 / 筛选栏 可调用组件规范。四个以上需控制数量；S 级大促仅一个且必须第一个。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "20. 筛选栏",
+        "figmaNode": "1402:4830",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1402-4830&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "筛选栏",
+        "size": "横向固定高",
+        "sourceSummary": "默认/选中/展开/收起",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "筛选栏",
+          "20. 筛选栏",
+          "组件/实例"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.筛选.筛选项": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "21. 筛选",
+      "componentName": "筛选项",
+      "componentNodeId": "2231:4920",
+      "componentType": "组件/实例",
+      "keySize": "上下/左右结构",
+      "allowedVariantsOrStates": "单选/多选/帮助/箭头",
+      "strictCallRule": "上下与左右结构不可混用；主标题过长不可用左右结构。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "21. 筛选 / 筛选项 可调用组件规范。上下与左右结构不可混用；主标题过长不可用左右结构。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "21. 筛选",
+        "figmaNode": "2231:4920",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=2231-4920&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "筛选项",
+        "size": "上下/左右结构",
+        "sourceSummary": "单选/多选/帮助/箭头",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "筛选项",
+          "21. 筛选",
+          "组件/实例"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.筛选面板.侧边栏筛选面板": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "22. 筛选面板",
+      "componentName": "侧边栏筛选面板",
+      "componentNodeId": "18624:10183",
+      "componentType": "组件/实例",
+      "keySize": "侧边栏 188px",
+      "allowedVariantsOrStates": "打开/关闭/重置/确认",
+      "strictCallRule": "侧边栏默认 188px；底部操作吸底，不得取消确认/重置规则。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "22. 筛选面板 / 侧边栏筛选面板 可调用组件规范。侧边栏默认 188px；底部操作吸底，不得取消确认/重置规则。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "22. 筛选面板",
+        "figmaNode": "18624:10183",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=18624-10183&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "侧边栏筛选面板",
+        "size": "侧边栏 188px",
+        "sourceSummary": "打开/关闭/重置/确认",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "侧边栏筛选面板",
+          "22. 筛选面板",
+          "组件/实例"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.城市选择.城市选择列表": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "23. 城市选择",
+      "componentName": "城市选择列表",
+      "componentNodeId": "1402:4831",
+      "componentType": "组件/实例",
+      "keySize": "含 A-Z 索引",
+      "allowedVariantsOrStates": "定位/热门/历史/列表",
+      "strictCallRule": "城市名最多四字；有 A-Z 时可点项可不带箭头。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "23. 城市选择 / 城市选择列表 可调用组件规范。城市名最多四字；有 A-Z 时可点项可不带箭头。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "23. 城市选择",
+        "figmaNode": "1402:4831",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1402-4831&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "城市选择列表",
+        "size": "含 A-Z 索引",
+        "sourceSummary": "定位/热门/历史/列表",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "城市选择列表",
+          "23. 城市选择",
+          "组件/实例"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.消息推送_Push.消息_Push": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "24. 消息推送 Push",
+      "componentName": "消息 Push",
+      "componentNodeId": "4003:3145",
+      "componentType": "组件/实例",
+      "keySize": "配图 64x64",
+      "allowedVariantsOrStates": "有配图/无配图/按钮/关闭",
+      "strictCallRule": "主副标题字数按规范，配图必须 64x64 二倍图切。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "24. 消息推送 Push / 消息 Push 可调用组件规范。主副标题字数按规范，配图必须 64x64 二倍图切。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "24. 消息推送 Push",
+        "figmaNode": "4003:3145",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4003-3145&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "消息 Push",
+        "size": "配图 64x64",
+        "sourceSummary": "有配图/无配图/按钮/关闭",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "消息 Push",
+          "24. 消息推送 Push",
+          "组件/实例"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.底部浮条_Snackbar.Snackbar": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "25. 底部浮条 Snackbar",
+      "componentName": "Snackbar",
+      "componentNodeId": "6588:3777",
+      "componentType": "组件/实例",
+      "keySize": "通栏/非通栏",
+      "allowedVariantsOrStates": "有底 bar/无底 bar",
+      "strictCallRule": "有底 bar 通栏，无底 bar 不通栏；主副标题 13-14 字内。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "25. 底部浮条 Snackbar / Snackbar 可调用组件规范。有底 bar 通栏，无底 bar 不通栏；主副标题 13-14 字内。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "25. 底部浮条 Snackbar",
+        "figmaNode": "6588:3777",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=6588-3777&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "Snackbar",
+        "size": "通栏/非通栏",
+        "sourceSummary": "有底 bar/无底 bar",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "Snackbar",
+          "25. 底部浮条 Snackbar",
+          "组件/实例"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "callable-component.优惠券.优惠券": {
+    "$type": "callable-component-spec",
+    "$value": {
+      "parentBoard": "26. 优惠券",
+      "componentName": "优惠券",
+      "componentNodeId": "2789:4258",
+      "componentType": "组件/实例",
+      "keySize": "数字/汉字面额",
+      "allowedVariantsOrStates": "去领取/去使用/勾选/失效",
+      "strictCallRule": "按钮最多四字；券状态不得通过手动画灰伪造。",
+      "strictProductionRule": "生产设计稿时必须直接调用 Figma 对应组件/组件集或其合法变体；仅允许替换文本、图片、业务数据和显式开放的属性。不得自由修改组件内部颜色、字号、字重、行高、圆角、描边、阴影、padding、gap、宽高、对齐、层级、图标尺寸或状态样式；若现有变体无法覆盖需求，必须在“待补充项”中补充规范后再新增变体。"
+    },
+    "$description": "26. 优惠券 / 优惠券 可调用组件规范。按钮最多四字；券状态不得通过手动画灰伪造。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "26. 优惠券",
+        "figmaNode": "2789:4258",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=2789-4258&t=45Su7kqGbP9OzKoZ-11",
+        "sourceGroup": "可调用组件链接",
+        "sourceTokenType": "组件调用规范",
+        "chineseName": "优惠券",
+        "size": "数字/汉字面额",
+        "sourceSummary": "去领取/去使用/勾选/失效",
+        "dimensions": [
+          "组件链接",
+          "关键尺寸",
+          "允许变体/状态",
+          "严格调用规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "生成设计稿时优先直接调用该组件或组件集。",
+        "aliases": [
+          "优惠券",
+          "26. 优惠券",
+          "组件/实例"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  },
+  "module.新增模块.通用新增模块规则": {
+    "$type": "module-spec",
+    "$value": {
+      "triggerRule": "当新增页面没有的模块时，按照统一的设计规范设计新增模块。",
+      "usageRule": "用于页面中缺失但业务需要新增的模块容器；新增模块必须先判断模块类型，再套用对应底色、圆角、内边距、元素间距、字号和文本色。",
+      "structureRule": "新增模块至少由模块容器、标题/主信息、说明文本/辅助信息组成；可按业务补充标签、按钮、图片或权益点，但内部基础组件仍需遵守对应 component/callable-component 规范。",
+      "layoutRule": "模块圆角 12px；内边距 24px；模块内元素间距 12px；容器宽度跟随页面栅格与父级安全边距，不得突破页面左右安全区。",
+      "styleRule": "模块底色需按类型选择：正常 #F2F3F5、会员 #FEF5EC、大促 #FFF0F0、AI相关 #F5F5FF；标题色 #0F131A，正文色 #5C5F66，辅助色 #919499。",
+      "tokenBindingRule": {
+        "radius": {
+          "moduleRadius": "12px"
+        },
+        "spacing": {
+          "padding": "24px",
+          "itemGap": "12px"
+        },
+        "fontSize": {
+          "titleOrPrimary": "28px",
+          "textOrSecondary": "24px"
+        },
+        "backgroundColorByType": {
+          "normal": "#F2F3F5",
+          "member": "#FEF5EC",
+          "promotion": "#FFF0F0",
+          "ai": "#F5F5FF"
+        },
+        "textColor": {
+          "title": "#0F131A",
+          "text": "#5C5F66",
+          "auxiliary": "#919499"
+        }
+      },
+      "variantRule": "模块类型仅限：正常、会员、大促、AI相关；类型不明确时默认使用正常 #F2F3F5，并在需补充项中标记业务类型。",
+      "stateRule": "默认状态按模块类型底色展示；加载、失效、错误、已领取、已开通等状态需调用对应基础组件状态，不得通过随意改色伪造。",
+      "contentRule": "标题使用 28px，正文/辅助信息使用 24px；文案可替换，但不得改变字号层级和标题/文本/辅助色语义。",
+      "interactionRule": "模块整体是否可点击由业务决定；模块内按钮、标签、价格、筛选等元素必须调用 agent-component-specs.json 中对应组件规范。",
+      "strictProductionRule": "新增模块可以按本规则创建新业务容器，但容器内基础组件必须直接调用 Figma 对应组件/组件集或合法变体；仅允许替换文本、图片、业务数据和显式开放的属性，不得自由修改组件内部样式。"
+    },
+    "$description": "当新增页面没有的模块时，按统一新增模块规范生成：r12、padding 24、gap 12、字号 28/24、按正常/会员/大促/AI 类型选择底色。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "agent-component-specs.json",
+        "figmaNode": "",
+        "figmaUrl": "",
+        "sourceGroup": "新增模块规则",
+        "sourceTokenType": "模块规范",
+        "chineseName": "通用新增模块规则",
+        "size": "跟随页面栅格与父级容器",
+        "sourceSummary": "用户补充：当新增页面没有的模块时，按照统一设计规范设计新增模块。",
+        "dimensions": [
+          "使用规则",
+          "结构规则",
+          "布局规则",
+          "样式规则",
+          "Token 绑定规则",
+          "变体规则",
+          "状态规则",
+          "内容规则",
+          "交互规则"
+        ],
+        "status": "已整理",
+        "needsSupplement": [],
+        "note": "用于新增业务模块容器；基础组件仍需引用 component/callable-component 规范。",
+        "aliases": [
+          "新增模块",
+          "通用模块",
+          "模块容器",
+          "normal",
+          "member",
+          "promotion",
+          "ai"
+        ],
+        "sourceWorkbook": "Fliggy_Style_基础组件规范清单_9维中文_20260506.xlsx",
+        "extractedAt": "2026-05-06"
+      }
+    }
+  }
+}

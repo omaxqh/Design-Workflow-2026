@@ -1,0 +1,78 @@
+{
+  "runId": "",
+  "createdAt": "",
+  "updatedAt": "",
+  "status": "draft | in_progress | waiting_for_user | completed | failed",
+  "currentState": "parse_request",
+  "requestSummary": "",
+  "globalAssumptions": [],
+  "tasks": [
+    {
+      "taskId": "task-001",
+      "requestSummary": "",
+      "routeType": "modify_existing_page | add_module | add_page",
+      "target": {
+        "figmaFile": "",
+        "fileKey": "",
+        "page": "",
+        "nodeId": "",
+        "module": "",
+        "element": ""
+      },
+      "contextRead": {
+        "productRules": [],
+        "pageRules": [],
+        "productSpecConstraints": [],
+        "pageSpecConstraints": [],
+        "figmaNodes": [],
+        "components": [],
+        "variables": [],
+        "referenceAssets": []
+      },
+      "proposalImage": {
+        "required": false,
+        "prompt": "",
+        "referenceImages": [],
+        "imagePathOrUrl": "",
+        "userConfirmation": "not_required | pending | confirmed | regenerate | revise",
+        "visualAnchors": [],
+        "decorativeAssetCandidates": [],
+        "specConflicts": []
+      },
+      "decorativeAssets": [
+        {
+          "name": "",
+          "source": "",
+          "referenceCrop": "",
+          "greenSource": "",
+          "alphaPng": "",
+          "outputPng": "",
+          "redBackgroundCheck": "pass | fail | not_checked",
+          "greenBackgroundCheck": "pass | fail | not_checked",
+          "blackBackgroundCheck": "pass | fail | not_checked",
+          "lightBackgroundCheck": "pass | fail | not_checked",
+          "darkBackgroundCheck": "pass | fail | not_checked",
+          "moduleBackgroundCheck": "pass | fail | not_checked",
+          "figmaNodeId": "",
+          "figmaScreenshot": ""
+        }
+      ],
+      "figmaWrite": {
+        "targetNode": "",
+        "summary": "",
+        "usedUseFigma": true
+      },
+      "selfCheck": {
+        "content": "pass | fail | not_run",
+        "designSystem": "pass | fail | not_run",
+        "layout": "pass | fail | not_run",
+        "visualMatch": "pass | fail | not_required | not_run",
+        "assets": "pass | fail | not_required | not_run",
+        "specConstraintsApplied": "pass | fail | not_required | not_run",
+        "visualAnchorsCompared": "pass | fail | not_required | not_run"
+      },
+      "handoffNotes": "",
+      "risks": []
+    }
+  ]
+}

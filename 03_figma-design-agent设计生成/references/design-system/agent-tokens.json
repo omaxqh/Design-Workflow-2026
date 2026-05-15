@@ -1,0 +1,2724 @@
+{
+  "color.品牌色.color_brand_1": {
+    "$type": "color",
+    "$value": "#FFE033",
+    "$description": "品牌识别、主强调、重要辅助强调。画板说明：品牌黄，传达品牌含义。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "品牌色",
+        "sourceTokenType": "颜色",
+        "chineseName": "品牌黄 / 主品牌色",
+        "canvasValue": "#FFE033",
+        "variableOrStyleValue": "#FFE033",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.品牌色.color_brand_2": {
+    "$type": "color",
+    "$value": "#FFE866",
+    "$description": "品牌黄浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "品牌色",
+        "sourceTokenType": "颜色",
+        "chineseName": "品牌黄浅阶 2",
+        "canvasValue": "#FFE866",
+        "variableOrStyleValue": "#FFE866",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.品牌色.color_brand_3": {
+    "$type": "color",
+    "$value": "#FFF099",
+    "$description": "品牌黄浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "品牌色",
+        "sourceTokenType": "颜色",
+        "chineseName": "品牌黄浅阶 3",
+        "canvasValue": "#FFF099",
+        "variableOrStyleValue": "#FFF099",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.品牌色.color_brand_4": {
+    "$type": "color",
+    "$value": "#FFF7CC",
+    "$description": "品牌弱背景、轻提示底色。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "品牌色",
+        "sourceTokenType": "颜色",
+        "chineseName": "品牌黄弱背景",
+        "canvasValue": "#FFF7CC",
+        "variableOrStyleValue": "#FFF7CC",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.品牌色.color_brand_5": {
+    "$type": "color",
+    "$value": "#FFFCEB",
+    "$description": "品牌极弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "品牌色",
+        "sourceTokenType": "颜色",
+        "chineseName": "品牌黄极弱背景",
+        "canvasValue": "#FFFCEB",
+        "variableOrStyleValue": "#FFFCEB",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.预订色.color_book_1": {
+    "$type": "color",
+    "$value": "#FF8C1A",
+    "$description": "一般预订色，传达预订感。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "预订色",
+        "sourceTokenType": "颜色",
+        "chineseName": "预订橙",
+        "canvasValue": "#FF8C1A",
+        "variableOrStyleValue": "#FF8C1A",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.预订色.color_book_2": {
+    "$type": "color",
+    "$value": "#FFA54D",
+    "$description": "预订浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "预订色",
+        "sourceTokenType": "颜色",
+        "chineseName": "预订橙浅阶 2",
+        "canvasValue": "#FFA54D",
+        "variableOrStyleValue": "#FFA54D",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.预订色.color_book_3": {
+    "$type": "color",
+    "$value": "#FFBF80",
+    "$description": "预订浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "预订色",
+        "sourceTokenType": "颜色",
+        "chineseName": "预订橙浅阶 3",
+        "canvasValue": "#FFBF80",
+        "variableOrStyleValue": "#FFBF80",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.预订色.color_book_4": {
+    "$type": "color",
+    "$value": "#FFE5CC",
+    "$description": "预订弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "预订色",
+        "sourceTokenType": "颜色",
+        "chineseName": "预订橙弱背景",
+        "canvasValue": "#FFE5CC",
+        "variableOrStyleValue": "#FFE5CC",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.预订色.color_book_5": {
+    "$type": "color",
+    "$value": "#FFF5EB",
+    "$description": "预订极弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "预订色",
+        "sourceTokenType": "颜色",
+        "chineseName": "预订橙极弱背景",
+        "canvasValue": "#FFF5EB",
+        "variableOrStyleValue": "#FFF5EB",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.支付色.color_pay_1": {
+    "$type": "color",
+    "$value": "#FF5533",
+    "$description": "支付、价格、优惠与强交易信息；画板说明为强调预订色，传达预订紧迫感。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "支付色",
+        "sourceTokenType": "颜色",
+        "chineseName": "支付橙 / 价格强调色",
+        "canvasValue": "#FF5533",
+        "variableOrStyleValue": "#FF5533",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.支付色.color_pay_2": {
+    "$type": "color",
+    "$value": "#FF8066",
+    "$description": "支付浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "支付色",
+        "sourceTokenType": "颜色",
+        "chineseName": "支付橙浅阶 2",
+        "canvasValue": "#FF8066",
+        "variableOrStyleValue": "#FF8066",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.支付色.color_pay_3": {
+    "$type": "color",
+    "$value": "#FFAA99",
+    "$description": "支付浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "支付色",
+        "sourceTokenType": "颜色",
+        "chineseName": "支付橙浅阶 3",
+        "canvasValue": "#FFAA99",
+        "variableOrStyleValue": "#FFAA99",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.支付色.color_pay_4": {
+    "$type": "color",
+    "$value": "#FFDFD9",
+    "$description": "支付弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "支付色",
+        "sourceTokenType": "颜色",
+        "chineseName": "支付橙弱背景",
+        "canvasValue": "#FFDFD9",
+        "variableOrStyleValue": "#FFDFD9",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.支付色.color_pay_5": {
+    "$type": "color",
+    "$value": "#FFF2F0",
+    "$description": "支付极弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "支付色",
+        "sourceTokenType": "颜色",
+        "chineseName": "支付橙极弱背景",
+        "canvasValue": "#FFF2F0",
+        "variableOrStyleValue": "#FFF2F0",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.警示色.color_warning_1": {
+    "$type": "color",
+    "$value": "#FF3333",
+    "$description": "删除、警告、错误等强警示。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "警示色",
+        "sourceTokenType": "颜色",
+        "chineseName": "警示红",
+        "canvasValue": "#FF3333",
+        "variableOrStyleValue": "#FF3333",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.警示色.color_warning_2": {
+    "$type": "color",
+    "$value": "#FF6666",
+    "$description": "警示浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "警示色",
+        "sourceTokenType": "颜色",
+        "chineseName": "警示红浅阶 2",
+        "canvasValue": "#FF6666",
+        "variableOrStyleValue": "#FF6666",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.警示色.color_warning_3": {
+    "$type": "color",
+    "$value": "#FF9999",
+    "$description": "警示浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "警示色",
+        "sourceTokenType": "颜色",
+        "chineseName": "警示红浅阶 3",
+        "canvasValue": "#FF9999",
+        "variableOrStyleValue": "#FF9999",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.警示色.color_warning_4": {
+    "$type": "color",
+    "$value": "#FFD9D9",
+    "$description": "警示弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "警示色",
+        "sourceTokenType": "颜色",
+        "chineseName": "警示红弱背景",
+        "canvasValue": "#FFD9D9",
+        "variableOrStyleValue": "#FFD9D9",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.警示色.color_warning_5": {
+    "$type": "color",
+    "$value": "#FFF0F0",
+    "$description": "警示极弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "警示色",
+        "sourceTokenType": "颜色",
+        "chineseName": "警示红极弱背景",
+        "canvasValue": "#FFF0F0",
+        "variableOrStyleValue": "#FFF0F0",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.强调色.color_indigo_1": {
+    "$type": "color",
+    "$value": "#6666FF",
+    "$description": "金刚区、icon 场景、辅助强调。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "强调色",
+        "sourceTokenType": "颜色",
+        "chineseName": "补充靛 / 辅助强调色",
+        "canvasValue": "#6666FF",
+        "variableOrStyleValue": "#6666FF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "需确认",
+        "note": "画板文字为 color_indigo_1，变量读取名为 color_secondary。",
+        "aliases": [
+          "color_secondary"
+        ]
+      }
+    }
+  },
+  "color.强调色.color_indigo_2": {
+    "$type": "color",
+    "$value": "#9999FF",
+    "$description": "强调浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "强调色",
+        "sourceTokenType": "颜色",
+        "chineseName": "补充靛浅阶 2",
+        "canvasValue": "#9999FF",
+        "variableOrStyleValue": "#9999FF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.强调色.color_indigo_3": {
+    "$type": "color",
+    "$value": "#CCCCFF",
+    "$description": "强调浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "强调色",
+        "sourceTokenType": "颜色",
+        "chineseName": "补充靛浅阶 3",
+        "canvasValue": "#CCCCFF",
+        "variableOrStyleValue": "#CCCCFF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.强调色.color_indigo_4": {
+    "$type": "color",
+    "$value": "#EBEBFF",
+    "$description": "强调弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "强调色",
+        "sourceTokenType": "颜色",
+        "chineseName": "补充靛弱背景",
+        "canvasValue": "#EBEBFF",
+        "variableOrStyleValue": "#EBEBFF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.强调色.color_indigo_5": {
+    "$type": "color",
+    "$value": "#F5F5FF",
+    "$description": "强调极弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "强调色",
+        "sourceTokenType": "颜色",
+        "chineseName": "补充靛极弱背景",
+        "canvasValue": "#F5F5FF",
+        "variableOrStyleValue": "#F5F5FF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.图标蓝.color_blue_1": {
+    "$type": "color",
+    "$value": "#4DA6FF",
+    "$description": "金刚区、icon 场景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "图标蓝",
+        "sourceTokenType": "颜色",
+        "chineseName": "图标蓝",
+        "canvasValue": "#4DA6FF",
+        "variableOrStyleValue": "#4DA6FF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.图标蓝.color_blue_2": {
+    "$type": "color",
+    "$value": "#80BFFF",
+    "$description": "图标蓝浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "图标蓝",
+        "sourceTokenType": "颜色",
+        "chineseName": "图标蓝浅阶 2",
+        "canvasValue": "#80BFFF",
+        "variableOrStyleValue": "#80BFFF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.图标蓝.color_blue_3": {
+    "$type": "color",
+    "$value": "#B3D8FF",
+    "$description": "图标蓝浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "图标蓝",
+        "sourceTokenType": "颜色",
+        "chineseName": "图标蓝浅阶 3",
+        "canvasValue": "#B3D8FF",
+        "variableOrStyleValue": "#B3D8FF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.图标蓝.color_blue_4": {
+    "$type": "color",
+    "$value": "#E6F2FF",
+    "$description": "图标蓝弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "图标蓝",
+        "sourceTokenType": "颜色",
+        "chineseName": "图标蓝弱背景",
+        "canvasValue": "#E6F2FF",
+        "variableOrStyleValue": "#E6F2FF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.图标蓝.color_blue_5": {
+    "$type": "color",
+    "$value": "#F2F8FF",
+    "$description": "图标蓝极弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "图标蓝",
+        "sourceTokenType": "颜色",
+        "chineseName": "图标蓝极弱背景",
+        "canvasValue": "#F2F8FF",
+        "variableOrStyleValue": "#F2F8FF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.正向色.Color_green_0": {
+    "$type": "color",
+    "$value": "#149AA8",
+    "$description": "正向反馈、提示。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "正向色",
+        "sourceTokenType": "颜色",
+        "chineseName": "正向青",
+        "canvasValue": "",
+        "variableOrStyleValue": "#149AA8",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "来自变量绑定：锁定基础颜色/Color_green_0，画板文字区未显式列出。",
+        "aliases": [
+          "color_green_0"
+        ]
+      }
+    }
+  },
+  "color.正向色.color_green_1": {
+    "$type": "color",
+    "$value": "#47B259",
+    "$description": "正向反馈、提示。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "正向色",
+        "sourceTokenType": "颜色",
+        "chineseName": "正向绿",
+        "canvasValue": "#47B359",
+        "variableOrStyleValue": "#47B259",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "需确认",
+        "note": "画板标注值与变量读取值不一致，建议以变量值为准并请设计侧确认。",
+        "aliases": []
+      }
+    }
+  },
+  "color.正向色.color_green_2": {
+    "$type": "color",
+    "$value": "#7AC4CC",
+    "$description": "正向浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "正向色",
+        "sourceTokenType": "颜色",
+        "chineseName": "正向绿浅阶 2",
+        "canvasValue": "#7ACC88",
+        "variableOrStyleValue": "#7AC4CC",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "需确认",
+        "note": "画板标注值与变量读取值不一致，建议以变量值为准并请设计侧确认。",
+        "aliases": []
+      }
+    }
+  },
+  "color.正向色.color_green_3": {
+    "$type": "color",
+    "$value": "#B8E1E6",
+    "$description": "正向浅阶。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "正向色",
+        "sourceTokenType": "颜色",
+        "chineseName": "正向绿浅阶 3",
+        "canvasValue": "#B8E6BF",
+        "variableOrStyleValue": "#B8E1E6",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "需确认",
+        "note": "画板标注值与变量读取值不一致，建议以变量值为准并请设计侧确认。",
+        "aliases": []
+      }
+    }
+  },
+  "color.正向色.color_green_4": {
+    "$type": "color",
+    "$value": "#E7F5F6",
+    "$description": "正向弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "正向色",
+        "sourceTokenType": "颜色",
+        "chineseName": "正向绿弱背景",
+        "canvasValue": "#DAF2DE",
+        "variableOrStyleValue": "#E7F5F6",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "需确认",
+        "note": "画板标注值与变量读取值不一致，建议以变量值为准并请设计侧确认。",
+        "aliases": []
+      }
+    }
+  },
+  "color.正向色.color_green_5": {
+    "$type": "color",
+    "$value": "#F2FEFF",
+    "$description": "正向极弱背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "正向色",
+        "sourceTokenType": "颜色",
+        "chineseName": "正向绿极弱背景",
+        "canvasValue": "#F2FFF4",
+        "variableOrStyleValue": "#F2FEFF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "需确认",
+        "note": "画板标注值与变量读取值不一致，建议以变量值为准并请设计侧确认。",
+        "aliases": []
+      }
+    }
+  },
+  "color.中性色.color_darkgray": {
+    "$type": "color",
+    "$value": "#0F131A",
+    "$description": "强调文字、正文、文字链。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "中性色",
+        "sourceTokenType": "颜色",
+        "chineseName": "深色字",
+        "canvasValue": "#0F131A",
+        "variableOrStyleValue": "#0F131A",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.中性色.color_midgray": {
+    "$type": "color",
+    "$value": "#5C5F66",
+    "$description": "中等层级文字。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "中性色",
+        "sourceTokenType": "颜色",
+        "chineseName": "中灰字",
+        "canvasValue": "#5C5F66",
+        "variableOrStyleValue": "#5C5F66",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.中性色.color_lightgray": {
+    "$type": "color",
+    "$value": "#919499",
+    "$description": "次要文字。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "中性色",
+        "sourceTokenType": "颜色",
+        "chineseName": "浅灰字",
+        "canvasValue": "#919499",
+        "variableOrStyleValue": "#919499",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.中性色.color_auxiliary": {
+    "$type": "color",
+    "$value": "#D2D4D9",
+    "$description": "辅助、失效、灰色背景分割线。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "中性色",
+        "sourceTokenType": "颜色",
+        "chineseName": "辅助字 / 辅助灰",
+        "canvasValue": "#D2D4D9",
+        "variableOrStyleValue": "#D2D4D9",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.中性色.color_bg": {
+    "$type": "color",
+    "$value": "#F2F3F5",
+    "$description": "全局背景、白色背景分割线。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "中性色",
+        "sourceTokenType": "颜色",
+        "chineseName": "背景灰",
+        "canvasValue": "#F2F3F5",
+        "variableOrStyleValue": "#F2F3F5",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.中性色.color_label": {
+    "$type": "color",
+    "$value": "#F7F8FA",
+    "$description": "标签背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "中性色",
+        "sourceTokenType": "颜色",
+        "chineseName": "标签灰",
+        "canvasValue": "#F7F8FA",
+        "variableOrStyleValue": "#F7F8FA",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "需确认",
+        "note": "画板局部文字写作 color_lable，变量读取为 color_label。",
+        "aliases": []
+      }
+    }
+  },
+  "color.中性色.color_white": {
+    "$type": "color",
+    "$value": "#FFFFFF",
+    "$description": "卡片、部分反白文字。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "中性色",
+        "sourceTokenType": "颜色",
+        "chineseName": "全局白",
+        "canvasValue": "#FFFFFF",
+        "variableOrStyleValue": "#FFFFFF",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.保障色_金属色.color_safeguard_5": {
+    "$type": "color",
+    "$value": "#5D3521",
+    "$description": "会员、保险等保障色。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "保障色 / 金属色",
+        "sourceTokenType": "颜色",
+        "chineseName": "保障深色 5",
+        "canvasValue": "#5D3521",
+        "variableOrStyleValue": "#5D3521",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "变量读取名为锁定基础颜色/color_safeguard_5。",
+        "aliases": []
+      }
+    }
+  },
+  "color.保障色_金属色.color_safeguard_1": {
+    "$type": "color",
+    "$value": "#805540",
+    "$description": "会员、保险等保障色。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "保障色 / 金属色",
+        "sourceTokenType": "颜色",
+        "chineseName": "保障深色 1",
+        "canvasValue": "#805540",
+        "variableOrStyleValue": "#805540",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.保障色_金属色.color_safeguard_2": {
+    "$type": "color",
+    "$value": "#EFD0A4",
+    "$description": "会员、保险等保障色。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "保障色 / 金属色",
+        "sourceTokenType": "颜色",
+        "chineseName": "保障中色",
+        "canvasValue": "#EFD0A4",
+        "variableOrStyleValue": "#EFD0A4",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.保障色_金属色.color_safeguard_3": {
+    "$type": "color",
+    "$value": "#FEEBD8",
+    "$description": "会员、保险等保障色。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "保障色 / 金属色",
+        "sourceTokenType": "颜色",
+        "chineseName": "保障中浅",
+        "canvasValue": "#FEEBD8",
+        "variableOrStyleValue": "#FEEBD8",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "color.保障色_金属色.color_safeguard_4": {
+    "$type": "color",
+    "$value": "#FEF5EC",
+    "$description": "会员、保险等保障色。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "色彩 Colors",
+        "figmaNode": "4:90",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-90",
+        "sourceGroup": "保障色 / 金属色",
+        "sourceTokenType": "颜色",
+        "chineseName": "保障浅色背景",
+        "canvasValue": "#FEF5EC",
+        "variableOrStyleValue": "#FEF5EC",
+        "unit": "HEX",
+        "params": "fill/color",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.h1": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "48px",
+      "fontWeight": 500,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "一级标题。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "一级标题",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 48px / Medium / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Medium; line-height=140% (约 67.2px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.h2": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "42px",
+      "fontWeight": 500,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "二级标题。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "二级标题",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 42px / Medium / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Medium; line-height=140% (约 58.8px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.h3": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "36px",
+      "fontWeight": 500,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "三级标题、导航/模块标题。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "三级标题",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 36px / Medium / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Medium; line-height=140% (约 50.4px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.subtitle": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "30px",
+      "fontWeight": 500,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "副标题、小标题。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "副标题",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 30px / Medium / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Medium; line-height=140% (42px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.body": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "30px",
+      "fontWeight": 400,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "常规文本。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "正文",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 30px / Regular / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Regular; line-height=140% (42px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.pargraph": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "30px",
+      "fontWeight": 400,
+      "lineHeight": "170%",
+      "letterSpacing": "0px"
+    },
+    "$description": "长段落。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "长段落",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 30px / Regular / line-height 170% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Regular; line-height=170% (51px); letter-spacing=0",
+        "status": "需确认",
+        "note": "Figma 样式名拼写为 pargraph，落地时建议增加 paragraph 别名。",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.body1": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "28px",
+      "fontWeight": 400,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "正文内容。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "正文 1",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 28px / Regular / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Regular; line-height=140% (约 39.2px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.body1Bold": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "28px",
+      "fontWeight": 500,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "正文强调。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "正文 1 强调",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 28px / Medium / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Medium; line-height=140% (约 39.2px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.body2": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "26px",
+      "fontWeight": 400,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "描述文案。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "正文 2",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 26px / Regular / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Regular; line-height=140% (约 36.4px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.body2Bold": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "26px",
+      "fontWeight": 500,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "描述强调。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "正文 2 强调",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 26px / Medium / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Medium; line-height=140% (约 36.4px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.body3": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "24px",
+      "fontWeight": 400,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "商品、酒店、POI 标签等。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "正文 3",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 24px / Regular / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Regular; line-height=140% (约 33.6px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.body3Bold": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "24px",
+      "fontWeight": 500,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "标签/描述强调。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "正文 3 强调",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 24px / Medium / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Medium; line-height=140% (约 33.6px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.body4": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "22px",
+      "fontWeight": 400,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "小字号正文。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "正文 4",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 22px / Regular / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Regular; line-height=140% (约 30.8px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.body4Bold": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "22px",
+      "fontWeight": 500,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "小字号强调。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "正文 4 强调",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 22px / Medium / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Medium; line-height=140% (约 30.8px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.caption": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "20px",
+      "fontWeight": 400,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "历史记录、次要标签等。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "辅助说明",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 20px / Regular / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Regular; line-height=140% (28px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.Figma_文字样式变量.captionBold": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "20px",
+      "fontWeight": 500,
+      "lineHeight": "140%",
+      "letterSpacing": "0px"
+    },
+    "$description": "辅助说明强调。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "Figma 文字样式变量",
+        "sourceTokenType": "文字",
+        "chineseName": "辅助说明强调",
+        "canvasValue": "",
+        "variableOrStyleValue": "PingFang SC / 20px / Medium / line-height 140% / letter-spacing 0",
+        "unit": "px",
+        "params": "font-family=PingFang SC; font-weight=Medium; line-height=140% (28px); letter-spacing=0",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.画板字号标注.font_usage_main_title_input": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "48px",
+      "fontWeight": 500,
+      "lineHeight": "1.2x | 58px 48px / 中黑 / 1.2x | 58px%",
+      "letterSpacing": "0px"
+    },
+    "$description": "如 POI 名称标题；如机酒目的地的默认标题。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "画板字号标注",
+        "sourceTokenType": "文字",
+        "chineseName": "主标题/输入",
+        "canvasValue": "48px / 中黑 / 1.2x | 58px",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "字重=中黑; 行高=1.2x | 58px",
+        "status": "已整理",
+        "note": "该组为 Typography 画板可见标注，与 Figma 文字样式变量并列保留。",
+        "aliases": []
+      }
+    }
+  },
+  "typography.画板字号标注.font_usage_nav_module_title": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "36px",
+      "fontWeight": 500,
+      "lineHeight": "1.5x | 54px 36px / 中黑 / 1.5x | 54px%",
+      "letterSpacing": "0px"
+    },
+    "$description": "如导航栏、卡片标题等模块标题。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "画板字号标注",
+        "sourceTokenType": "文字",
+        "chineseName": "导航/模块标题",
+        "canvasValue": "36px / 中黑 / 1.5x | 54px",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "字重=中黑; 行高=1.5x | 54px",
+        "status": "已整理",
+        "note": "该组为 Typography 画板可见标注，与 Figma 文字样式变量并列保留。",
+        "aliases": []
+      }
+    }
+  },
+  "typography.画板字号标注.font_usage_small_title": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "30px",
+      "fontWeight": 500,
+      "lineHeight": "1.5x | 45px 30px / 中黑 / 1.5x | 45px%",
+      "letterSpacing": "0px"
+    },
+    "$description": "如商品名、搜索 List。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "画板字号标注",
+        "sourceTokenType": "文字",
+        "chineseName": "小标题",
+        "canvasValue": "30px / 中黑 / 1.5x | 45px",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "字重=中黑; 行高=1.5x | 45px",
+        "status": "已整理",
+        "note": "该组为 Typography 画板可见标注，与 Figma 文字样式变量并列保留。",
+        "aliases": []
+      }
+    }
+  },
+  "typography.画板字号标注.font_usage_paragraph_content": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "28px",
+      "fontWeight": 500,
+      "lineHeight": "1.6x | 45px 28px / 普通/中黑 / 1.6x | 45px%",
+      "letterSpacing": "0px"
+    },
+    "$description": "如图文详情、段落文案等。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "画板字号标注",
+        "sourceTokenType": "文字",
+        "chineseName": "段落/内容文案",
+        "canvasValue": "28px / 普通/中黑 / 1.6x | 45px",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "字重=普通/中黑; 行高=1.6x | 45px",
+        "status": "已整理",
+        "note": "该组为 Typography 画板可见标注，与 Figma 文字样式变量并列保留。",
+        "aliases": []
+      }
+    }
+  },
+  "typography.画板字号标注.font_usage_description_26": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "26px",
+      "fontWeight": 400,
+      "lineHeight": "1.5x | 42px 26px / 普通 / 1.5x | 42px%",
+      "letterSpacing": "0px"
+    },
+    "$description": "如景点、酒店等描述信息。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "画板字号标注",
+        "sourceTokenType": "文字",
+        "chineseName": "描述文案",
+        "canvasValue": "26px / 普通 / 1.5x | 42px",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "字重=普通; 行高=1.5x | 42px",
+        "status": "已整理",
+        "note": "该组为 Typography 画板可见标注，与 Figma 文字样式变量并列保留。",
+        "aliases": []
+      }
+    }
+  },
+  "typography.画板字号标注.font_usage_description_24": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "24px",
+      "fontWeight": 400,
+      "lineHeight": "1.5x | 36px 24px / 普通 / 1.5x | 36px%",
+      "letterSpacing": "0px"
+    },
+    "$description": "如商品、酒店、POI 标签等。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "画板字号标注",
+        "sourceTokenType": "文字",
+        "chineseName": "描述文案",
+        "canvasValue": "24px / 普通 / 1.5x | 36px",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "字重=普通; 行高=1.5x | 36px",
+        "status": "已整理",
+        "note": "该组为 Typography 画板可见标注，与 Figma 文字样式变量并列保留。",
+        "aliases": []
+      }
+    }
+  },
+  "typography.画板字号标注.font_usage_auxiliary": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "PingFang SC",
+      "fontSize": "20px",
+      "fontWeight": 400,
+      "lineHeight": "1.5x | 30px 20px / 普通 / 1.5x | 30px%",
+      "letterSpacing": "0px"
+    },
+    "$description": "如历史记录、次要标签等。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "画板字号标注",
+        "sourceTokenType": "文字",
+        "chineseName": "辅助信息",
+        "canvasValue": "20px / 普通 / 1.5x | 30px",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "字重=普通; 行高=1.5x | 30px",
+        "status": "已整理",
+        "note": "该组为 Typography 画板可见标注，与 Figma 文字样式变量并列保留。",
+        "aliases": []
+      }
+    }
+  },
+  "typography.字体选择.font_family_system": {
+    "$type": "fontFamily",
+    "$value": "PingFang SC / 系统原生中文字体",
+    "$description": "界面字体默认使用系统原生字体。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "字体选择",
+        "sourceTokenType": "字体族",
+        "chineseName": "界面系统字体",
+        "canvasValue": "采用系统原生字体",
+        "variableOrStyleValue": "PingFang SC",
+        "unit": "font-family",
+        "params": "iOS=PingFang SC；Android=思源黑体/系统中文字体",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "typography.飞猪品牌字体.font_family_fliggy_brand": {
+    "$type": "fontFamily",
+    "$value": "Fliggy brand font",
+    "$description": "品牌相关场景、标签、Titlebar 字体、权益/利益点。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "飞猪品牌字体",
+        "sourceTokenType": "字体族",
+        "chineseName": "飞猪品牌体",
+        "canvasValue": "Medium、Medium Italic；Bold、Bold Italic",
+        "variableOrStyleValue": "",
+        "unit": "font-family",
+        "params": "产品页面中需使用 Medium、Medium Italic；Bold/Bold Italic 一般用于活动页主图大标题等少字强强调场景。",
+        "status": "已整理",
+        "note": "需补充品牌字体文件名、授权和代码 fallback。",
+        "aliases": []
+      }
+    }
+  },
+  "typography.段落交互.paragraph_expand_collapse_text": {
+    "$type": "string",
+    "$value": "跟随所在段落",
+    "$description": "长段落收起、展开。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "文字排版 Typography",
+        "figmaNode": "4:550",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-550",
+        "sourceGroup": "段落交互",
+        "sourceTokenType": "文字规则",
+        "chineseName": "展开/收起文字",
+        "canvasValue": "字号及行高应与段落字号、行高保持一致",
+        "variableOrStyleValue": "",
+        "unit": "rule",
+        "params": "font-size=line-height=所在段落",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "radius.小圆角.radius_s": {
+    "$type": "dimension",
+    "$value": "12px",
+    "$description": "小卡片、图片、标签、轻量容器。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "圆角 Radius",
+        "figmaNode": "4:17",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-17",
+        "sourceGroup": "小圆角",
+        "sourceTokenType": "圆角",
+        "chineseName": "小圆角",
+        "canvasValue": "12",
+        "variableOrStyleValue": "12",
+        "unit": "px",
+        "params": "border-radius: 12px",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "radius.大圆角.radius_m": {
+    "$type": "dimension",
+    "$value": "24px",
+    "$description": "大卡片、浮层、主要容器。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "圆角 Radius",
+        "figmaNode": "4:17",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-17",
+        "sourceGroup": "大圆角",
+        "sourceTokenType": "圆角",
+        "chineseName": "大圆角",
+        "canvasValue": "24",
+        "variableOrStyleValue": "24",
+        "unit": "px",
+        "params": "border-radius: 24px",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "line.样式一.line_on_white_bg": {
+    "$type": "color",
+    "$value": "#F2F3F5",
+    "$description": "白色卡片或白底页面。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "分割线 Line",
+        "figmaNode": "4:2",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-2",
+        "sourceGroup": "样式一",
+        "sourceTokenType": "分割线",
+        "chineseName": "通用白色背景分割线",
+        "canvasValue": "用于白色背景 color_bg",
+        "variableOrStyleValue": "#F2F3F5",
+        "unit": "HEX",
+        "params": "线长示例 714px；矢量线高度 0，导出约 1px 视觉线",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "line.样式二.line_on_gray_bg": {
+    "$type": "color",
+    "$value": "#D2D4D9",
+    "$description": "灰色背景上需要更清晰的分隔。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "分割线 Line",
+        "figmaNode": "4:2",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-2",
+        "sourceGroup": "样式二",
+        "sourceTokenType": "分割线",
+        "chineseName": "灰色背景分割线",
+        "canvasValue": "用于灰色背景 color_auxiliary",
+        "variableOrStyleValue": "#D2D4D9",
+        "unit": "HEX",
+        "params": "线长示例 714px；矢量线高度 0，导出约 1px 视觉线",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "line.样式三.line_on_dark_or_image_bg": {
+    "$type": "string",
+    "$value": "白色/浅色分割线，透明度需按背景确认",
+    "$description": "深色或图片背景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "分割线 Line",
+        "figmaNode": "4:2",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=4-2",
+        "sourceGroup": "样式三",
+        "sourceTokenType": "分割线",
+        "chineseName": "深色/图片背景分割线",
+        "canvasValue": "深色/图片背景分割线",
+        "variableOrStyleValue": "",
+        "unit": "color+opacity",
+        "params": "线长示例 714px；透明度未在变量中读取到",
+        "status": "需补充",
+        "note": "当前变量 defs 未给出深色/图片背景分割线的透明度。",
+        "aliases": []
+      }
+    }
+  },
+  "grid.基础栅格.grid_mobile_canvas_width": {
+    "$type": "dimension",
+    "$value": "750px",
+    "$description": "移动端设计稿基准宽度。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "基础栅格",
+        "sourceTokenType": "栅格",
+        "chineseName": "移动端画板宽",
+        "canvasValue": "750",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "canvas width",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.基础栅格.grid_content_width": {
+    "$type": "dimension",
+    "$value": "714px",
+    "$description": "750px 画板下主体内容区宽度。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "基础栅格",
+        "sourceTokenType": "栅格",
+        "chineseName": "主体内容宽",
+        "canvasValue": "714",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "content width = 750 - 18 * 2",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.基础栅格.grid_safe_margin_x": {
+    "$type": "dimension",
+    "$value": "18px",
+    "$description": "页面左右安全边距。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "基础栅格",
+        "sourceTokenType": "间距",
+        "chineseName": "左右安全边距",
+        "canvasValue": "18px / 18px",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "left/right margin",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.基础栅格.grid_base_unit": {
+    "$type": "dimension",
+    "$value": "6px",
+    "$description": "基础栅格单位。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "基础栅格",
+        "sourceTokenType": "间距",
+        "chineseName": "基础栅格单位",
+        "canvasValue": "6px",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "6px grid",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.基础栅格.grid_column_count": {
+    "$type": "number",
+    "$value": 12,
+    "$description": "移动端基础栅格。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "基础栅格",
+        "sourceTokenType": "栅格",
+        "chineseName": "12 等分基础栅格",
+        "canvasValue": "12等分基础栅格",
+        "variableOrStyleValue": "",
+        "unit": "count",
+        "params": "750px 画板 / 714px 内容宽",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.三种固定等分.grid_fixed_1_col": {
+    "$type": "dimension",
+    "$value": "714px",
+    "$description": "单列内容容器。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "三种固定等分",
+        "sourceTokenType": "布局尺寸",
+        "chineseName": "1 等分固定宽",
+        "canvasValue": "714",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "1 col",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.三种固定等分.grid_fixed_2_col": {
+    "$type": "dimension",
+    "$value": "348px",
+    "$description": "二等分卡片。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "三种固定等分",
+        "sourceTokenType": "布局尺寸",
+        "chineseName": "2 等分固定宽",
+        "canvasValue": "348",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "2 * 348 + 18 gap = 714",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.三种固定等分.grid_fixed_3_col": {
+    "$type": "dimension",
+    "$value": "226px",
+    "$description": "三等分卡片。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "三种固定等分",
+        "sourceTokenType": "布局尺寸",
+        "chineseName": "3 等分固定宽",
+        "canvasValue": "226",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "3 * 226 + 2 * 18 gap = 714",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.三种固定等分.grid_fixed_4_col": {
+    "$type": "dimension",
+    "$value": "165px",
+    "$description": "四等分卡片。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "三种固定等分",
+        "sourceTokenType": "布局尺寸",
+        "chineseName": "4 等分固定宽",
+        "canvasValue": "165",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "4 * 165 + 3 * 18 gap = 714",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.四种横滑等分.grid_scroll_1_plus_n": {
+    "$type": "string",
+    "$value": "470 / 244",
+    "$description": "首项大卡 + 露出下一项。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "四种横滑等分",
+        "sourceTokenType": "布局尺寸",
+        "chineseName": "横滑 1+n",
+        "canvasValue": "470 + 244",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "470 + 18 gap + 244 = 732",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.四种横滑等分.grid_scroll_2_plus_n": {
+    "$type": "string",
+    "$value": "312 / 312 / 72",
+    "$description": "双卡 + 露出下一项。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "四种横滑等分",
+        "sourceTokenType": "布局尺寸",
+        "chineseName": "横滑 2+n",
+        "canvasValue": "312 + 312 + 72",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "312 + 18 gap + 312 + 18 gap + 72 = 732",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.四种横滑等分.grid_scroll_3_plus_n": {
+    "$type": "string",
+    "$value": "202 / 202 / 202 / 72",
+    "$description": "三卡 + 露出下一项。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "四种横滑等分",
+        "sourceTokenType": "布局尺寸",
+        "chineseName": "横滑 3+n",
+        "canvasValue": "202 + 202 + 202 + 72",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "每项间隔 18px",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.四种横滑等分.grid_scroll_4_plus_n": {
+    "$type": "string",
+    "$value": "147 / 147 / 147 / 147 / 72",
+    "$description": "四卡 + 露出下一项。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "四种横滑等分",
+        "sourceTokenType": "布局尺寸",
+        "chineseName": "横滑 4+n",
+        "canvasValue": "147 + 147 + 147 + 147 + 72",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "每项间隔 18px",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "grid.5等分及以上.grid_5_col_plus_rule": {
+    "$type": "string",
+    "$value": "不建议常规使用",
+    "$description": "手机设备上不常见。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "栅格 Grids",
+        "figmaNode": "993:957",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=993-957",
+        "sourceGroup": "5等分及以上",
+        "sourceTokenType": "布局规则",
+        "chineseName": "5 等分及以上规则",
+        "canvasValue": "5等分及以上在手机设备上不常见",
+        "variableOrStyleValue": "",
+        "unit": "rule",
+        "params": "优先横滑或 Tab 类处理",
+        "status": "需补充",
+        "note": "画板后半句被 MCP 截断，需设计侧补全完整文案。",
+        "aliases": []
+      }
+    }
+  },
+  "space.16_9_图片.image_16_9_canvas": {
+    "$type": "string",
+    "$value": "750 x 420",
+    "$description": "模块卡片、页面首图、背景氛围、视频入口。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "16:9 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "16:9 全屏图",
+        "canvasValue": "750 x 420",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.16_9_图片.image_16_9_content": {
+    "$type": "string",
+    "$value": "714 x 402",
+    "$description": "模块卡片、页面首图、背景氛围、视频入口。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "16:9 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "16:9 内容区图",
+        "canvasValue": "714 x 402",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.16_9_图片.image_16_9_two_col": {
+    "$type": "string",
+    "$value": "348 x 195",
+    "$description": "双列卡片图片。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "16:9 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "16:9 双列图",
+        "canvasValue": "348 x 195",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.窄头图.image_silver_canvas": {
+    "$type": "string",
+    "$value": "750 x 312",
+    "$description": "单个卡片入口、高度较小的头图。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "窄头图",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "窄头图全屏尺寸",
+        "canvasValue": "750 x 312",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.窄头图.image_silver_content": {
+    "$type": "string",
+    "$value": "714 x 294",
+    "$description": "单个卡片入口、高度较小的头图。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "窄头图",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "窄头图内容区尺寸",
+        "canvasValue": "714 x 294",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.4_3_图片.image_4_3_two_col": {
+    "$type": "string",
+    "$value": "348 x 260",
+    "$description": "POI、目的地、内容模块图像。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "4:3 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "4:3 双列图",
+        "canvasValue": "348 x 260",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.4_3_图片.image_4_3_three_col": {
+    "$type": "string",
+    "$value": "226 x 170",
+    "$description": "POI、目的地、内容模块图像。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "4:3 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "4:3 三列图",
+        "canvasValue": "226 x 170",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.4_3_图片.image_4_3_four_col": {
+    "$type": "string",
+    "$value": "165 x 124",
+    "$description": "POI、目的地、内容模块图像。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "4:3 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "4:3 四列图",
+        "canvasValue": "165 x 124",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.4_3_横滑.image_4_3_scroll_2n": {
+    "$type": "string",
+    "$value": "312 x 234",
+    "$description": "横滑卡片图片。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "4:3 横滑",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "横滑 2+n 图片",
+        "canvasValue": "312 x 234",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.4_3_横滑.image_4_3_scroll_3n": {
+    "$type": "string",
+    "$value": "202 x 152",
+    "$description": "横滑卡片图片。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "4:3 横滑",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "横滑 3+n 图片",
+        "canvasValue": "202 x 152",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.1_1_图片.image_1_1_canvas": {
+    "$type": "string",
+    "$value": "750 x 750",
+    "$description": "商品图。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "1:1 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "1:1 全屏图",
+        "canvasValue": "750 x 750",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.1_1_图片.image_1_1_content": {
+    "$type": "string",
+    "$value": "714 x 714",
+    "$description": "商品图。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "1:1 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "1:1 内容区图",
+        "canvasValue": "714 x 714",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.1_1_图片.image_1_1_two_col": {
+    "$type": "string",
+    "$value": "348 x 348",
+    "$description": "商品图。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "1:1 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "1:1 双列图",
+        "canvasValue": "348 x 348",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.1_1_图片.image_1_1_three_col": {
+    "$type": "string",
+    "$value": "226 x 226",
+    "$description": "商品图。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "1:1 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "1:1 三列图",
+        "canvasValue": "226 x 226",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.1_1_图片.image_1_1_four_col": {
+    "$type": "string",
+    "$value": "165 x 165",
+    "$description": "商品图。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "1:1 图片",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "1:1 四列图",
+        "canvasValue": "165 x 165",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.Banner.banner_large_canvas": {
+    "$type": "string",
+    "$value": "750 x 234",
+    "$description": "Banner 场景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "Banner",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "Banner 大图全屏",
+        "canvasValue": "750 x 234",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.Banner.banner_large_content": {
+    "$type": "string",
+    "$value": "714 x 222",
+    "$description": "Banner 场景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "Banner",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "Banner 大图内容区",
+        "canvasValue": "714 x 222",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.Banner.banner_large_3x": {
+    "$type": "string",
+    "$value": "1125 x 351",
+    "$description": "750 x 234 的 3x 标注。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "Banner",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "Banner 大图 3x 切图",
+        "canvasValue": "1125 x 351",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.Banner.banner_compact_canvas": {
+    "$type": "string",
+    "$value": "750 x 180",
+    "$description": "Banner 场景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "Banner",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "Banner 紧凑全屏",
+        "canvasValue": "750 x 180",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "space.Banner.banner_compact_content": {
+    "$type": "string",
+    "$value": "714 x 170",
+    "$description": "Banner 场景。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "间距 Space",
+        "figmaNode": "1010:2683",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1010-2683",
+        "sourceGroup": "Banner",
+        "sourceTokenType": "图片/尺寸",
+        "chineseName": "Banner 紧凑内容区",
+        "canvasValue": "714 x 170",
+        "variableOrStyleValue": "",
+        "unit": "px",
+        "params": "width x height",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "shadow.阴影.shadow_common": {
+    "$type": "shadow",
+    "$value": {
+      "color": "#0000001A",
+      "offsetX": "0px",
+      "offsetY": "6px",
+      "blur": "20px",
+      "spread": "0px"
+    },
+    "$description": "提示性小气泡、小浮层、轻量悬浮按钮。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "阴影 Shadow",
+        "figmaNode": "245:741",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=245-741",
+        "sourceGroup": "阴影",
+        "sourceTokenType": "阴影",
+        "chineseName": "通用阴影",
+        "canvasValue": "提示性小气泡情况下使用",
+        "variableOrStyleValue": "Effect(type: DROP_SHADOW, color: #0000001A, offset: (0, 6), radius: 20, spread: 0)",
+        "unit": "shadow",
+        "params": "x=0; y=6; blur=20; spread=0; color=#0000001A",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "gradient.横构图.gradient_mask_horizontal": {
+    "$type": "gradient",
+    "$value": "linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 36.969%-39.884%, rgba(0,0,0,0.6) 100%)",
+    "$description": "横构图图片上叠文字时提高可读性。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "渐变蒙层 Gradient mask",
+        "figmaNode": "1268:15791",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1268-15791",
+        "sourceGroup": "横构图",
+        "sourceTokenType": "渐变蒙层",
+        "chineseName": "横构图渐变蒙层",
+        "canvasValue": "rgba(0,0,0,0.05) -> rgba(0,0,0,0.1) -> rgba(0,0,0,0.6)",
+        "variableOrStyleValue": "渐变-横构图",
+        "unit": "gradient",
+        "params": "方向=to bottom；示例尺寸 300 x 200；圆角 12px",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "gradient.竖构图.gradient_mask_vertical": {
+    "$type": "gradient",
+    "$value": "linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%)",
+    "$description": "竖构图图片上叠文字时提高可读性。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "渐变蒙层 Gradient mask",
+        "figmaNode": "1268:15791",
+        "figmaUrl": "https://www.figma.com/design/P2lMwWNTqJIBQ1d5I9pTyY/Fliggy-Style?node-id=1268-15791",
+        "sourceGroup": "竖构图",
+        "sourceTokenType": "渐变蒙层",
+        "chineseName": "竖构图渐变蒙层",
+        "canvasValue": "rgba(0,0,0,0) 50% -> rgba(0,0,0,0.5) 100%",
+        "variableOrStyleValue": "渐变-竖构图",
+        "unit": "gradient",
+        "params": "方向=to bottom；示例尺寸 200 x 300；圆角 12px",
+        "status": "已整理",
+        "note": "",
+        "aliases": []
+      }
+    }
+  },
+  "motion.动效.motion_tokens": {
+    "$type": "string",
+    "$value": "待补充",
+    "$description": "需补充动效画板链接或源节点后整理。",
+    "$extensions": {
+      "com.fliggy.meta": {
+        "board": "动效 Motion",
+        "figmaNode": "未提供",
+        "figmaUrl": "",
+        "sourceGroup": "动效",
+        "sourceTokenType": "动效",
+        "chineseName": "动效 Token",
+        "canvasValue": "当前已读取的基础画板中未发现独立动效画板",
+        "variableOrStyleValue": "",
+        "unit": "duration/easing",
+        "params": "duration / easing / delay / transform",
+        "status": "待补充",
+        "note": "未编造默认动效值。",
+        "aliases": []
+      }
+    }
+  }
+}
