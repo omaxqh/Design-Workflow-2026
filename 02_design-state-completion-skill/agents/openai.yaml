@@ -1,0 +1,7 @@
+interface:
+  display_name: "设计状态补全"
+  short_description: "从主页面 Figma 自动补全业务全情况"
+  default_prompt: "使用 $design-state-completion 分析这个 Figma 主页面，并补全业务状态矩阵和对应全情况设计稿。"
+
+policy:
+  allow_implicit_invocation: true
