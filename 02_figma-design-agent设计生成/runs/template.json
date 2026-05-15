@@ -34,6 +34,8 @@
         "prompt": "",
         "referenceImages": [],
         "imagePathOrUrl": "",
+        "outputType": "bitmap_png | bitmap_jpeg | bitmap_webp | not_generated",
+        "generationMethod": "image_gen",
         "userConfirmation": "not_required | pending | confirmed | regenerate | revise",
         "visualAnchors": [],
         "decorativeAssetCandidates": [],
@@ -69,7 +71,19 @@
         "visualMatch": "pass | fail | not_required | not_run",
         "assets": "pass | fail | not_required | not_run",
         "specConstraintsApplied": "pass | fail | not_required | not_run",
-        "visualAnchorsCompared": "pass | fail | not_required | not_run"
+        "pageSpecMechanicalCheck": "pass | fail | not_required | not_run",
+        "visualAnchorsCompared": "pass | fail | not_required | not_run",
+        "specConstraintEvidence": [
+          {
+            "category": "fontSize | color | spacing | padding | margin | radius | stroke | shadow | size | fixedLayout",
+            "nodeId": "",
+            "specValue": "",
+            "actualValue": "",
+            "verificationMethod": "figma_node_property | variable_binding | script_measurement | screenshot_measurement",
+            "result": "pass | fail",
+            "fixAction": ""
+          }
+        ]
       },
       "handoffNotes": "",
       "risks": []

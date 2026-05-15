@@ -24,6 +24,8 @@
 14. 新增模块或新增页面的 Figma 写入必须以用户确认的方案图为视觉还原标准。禁止只按文字需求、组件规范或个人判断直接写入 Figma；写入前必须打开并对照确认方案图，写入过程中必须围绕方案图视觉锚点调整。
 15. 只要确认方案图中出现具有明确视觉识别度的装饰元素、轻拟物图标、插画、光效、质感物件、产品 mockup 或复杂纹理，无论这些元素理论上能否用基础图层近似绘制，都必须先从确认方案图中识别并导出为透明 PNG 素材，再传入 Figma 还原。禁止在 Figma 还原阶段用可编辑基础图层重新绘制这些装饰元素来替代方案图视觉。
 16. 交付前必须输出并保存“确认方案图 vs Figma 设计稿”的截图对比，逐项判断差距是否过大；涉及装饰元素时，还必须单独比对装饰元素与方案图中的原始视觉是否一致。未完成截图对比或差距明显过大时，不允许标记完成。
+17. 已有页面新增模块或局部布局匹配的最终自检，必须严格按 [figma design agent 页面级设计规范.md](figma%20design%20agent%20%E9%A1%B5%E9%9D%A2%E7%BA%A7%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83.md) 进行硬性机械校验。字号、颜色、间距、内外边距、圆角、描边、阴影和页面固定布局必须优先用 Figma 节点属性、变量绑定或脚本量测验证；未量测或未记录证据即视为未通过。
+18. `generate_design_image` 必须使用 image gen 指令生成位图方案图。方案图源文件必须是 PNG、JPEG 或 WebP 等位图输出；禁止用 SVG、HTML/CSS、Canvas、Figma shape 脚本或其他矢量/代码绘图方式生成方案图，也禁止把 SVG 转成 PNG 后冒充 image gen 位图。
 
 ## Workflow 状态
 
@@ -102,6 +104,13 @@
 ### 4. generate_design_image
 
 仅用于 `add_module` 和 `add_page`。
+
+方案图生成方式：
+
+- 必须调用 image gen 指令生成位图方案图。
+- 输出必须是 PNG、JPEG 或 WebP 等位图文件，并写入运行记录 `proposalImage.imagePathOrUrl` 和 `proposalImage.outputType`。
+- 禁止使用 SVG、HTML/CSS、Canvas、Figma shape 脚本、手写矢量或任何代码绘图方式生成方案图。
+- 禁止先画 SVG 或代码图，再导出/截图为 PNG 作为方案图；如果方案图来源不是 image gen 位图，必须判定 `generate_design_image` 失败并重新生成。
 
 方案图必须基于：
 
@@ -195,6 +204,14 @@
 ### 8. self_check
 
 交付前运行 [CHECKLISTS.md](CHECKLISTS.md) 中的检查。
+
+已有页面新增模块或局部布局匹配必须先执行 `CHECKLISTS.md` 的“页面级规范硬性机械校验”：
+
+- 重新定位本次目标页面在页面级规范中的章节。
+- 从运行记录读取 `pageSpecConstraints`；缺失时返回 `read_context` 提取，不允许继续交付。
+- 逐项机械核验字号、颜色、间距、内边距、外边距、圆角、描边、阴影、尺寸和页面固定布局。
+- 每项都必须记录规范值、Figma 实际值、目标节点和结论；无法读取实际值时按失败处理。
+- 页面级规范失败时，`designSystem`、`specConstraintsApplied` 和 `pageSpecMechanicalCheck` 必须为 `fail`，并返回 `write_figma` 修复。
 
 新增模块或新增页面必须额外执行两类对比：
 

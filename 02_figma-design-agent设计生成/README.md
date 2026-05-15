@@ -16,15 +16,62 @@
 - [references/design-system/agent-component-specs.json](references/design-system/agent-component-specs.json)：image gen 和 Figma 还原前使用的 Figma 组件规范清单。
 - [references/style-library/README.md](references/style-library/README.md)：image gen 方案图生成前使用的风格参考图库说明；参考图从 `/Users/tianzhongyi/Documents/figma-design-executor/assets/style-library` 查找。
 - [runs/template.json](runs/template.json)：每次任务运行记录模板。
-- [PLAN.md](PLAN.md)：原始实施方案。
-- [figma design agent 草稿.md](figma%20design%20agent%20%E8%8D%89%E7%A8%BF.md)：初始草稿。
+
+## 当前目录结构
+
+当前仓库根目录的业务内容主要集中在 `02_figma-design-agent设计生成/`。这个目录内部建议按“入口文档、长期参考、过程记录、运行产物”来理解：
+
+```text
+02_figma-design-agent设计生成/
+├── AGENTS.md
+├── README.md
+├── WORKFLOW_AGENT.md
+├── STATE_AND_RESOURCES.md
+├── CHECKLISTS.md
+├── PROMPTS.md
+├── design-rules.md
+├── figma design agent 页面级设计规范.md
+├── workflow.agent.json
+├── memory/
+│   └── YYYY-MM-DD.md
+├── references/
+│   ├── design-system/
+│   │   ├── agent-tokens.json
+│   │   └── agent-component-specs.json
+│   └── style-library/
+│       ├── README.md
+│       └── index.md
+└── runs/
+    ├── template.json
+    ├── YYYYMMDD-HHMM-*.json
+    ├── *.png
+    └── assets/
+```
+
+各目录职责如下：
+
+- `AGENTS.md` 到 `PROMPTS.md`：agent 的主执行文档，定义入口、状态机、提示词和检查清单。
+- `design-rules.md` 与 `figma design agent 页面级设计规范.md`：设计规范层，分别承载产品级规则和页面级硬约束。
+- `workflow.agent.json`：机器可读配置，方便把文档规则同步给自动化流程。
+- `memory/`：按日期沉淀关键变更、决策和阶段性记录，适合作为长期记忆。
+- `references/design-system/`：稳定的设计系统输入，例如 token 和组件规格。
+- `references/style-library/`：方案图阶段使用的风格参考索引，不直接产出最终 Figma。
+- `runs/`：单次任务运行记录和过程中产生的截图、方案图、素材等短周期产物。
+- `runs/assets/`：运行过程中切出来的独立素材、比对图和图标资源，属于 `runs/` 的附属产物。
+
+## 维护建议
+
+- 长期有效的规则、协议、模板放在根层文档或 `references/`，不要混进 `runs/`。
+- 一次性任务产物统一进 `runs/`，命名继续沿用时间戳加短语义 slug。
+- `memory/` 只记录结论和关键决策，不重复堆积完整运行日志。
+- 如果某份文档已经删除或迁移，优先更新这里的入口清单，避免 README 与真实目录脱节。
 
 ## 核心原则
 
 Agent 必须区分“修改已有设计”和“新增设计内容”：
 
 - 修改已有页面或元素：跳过 image gen，直接读取目标 Figma 上下文并做定点修改。
-- 新增模块或新增页面：必须先生成设计方案图，并等待用户明确确认后再进入 Figma 还原。
+- 新增模块或新增页面：必须先用 image gen 指令生成 PNG/JPEG/WebP 等位图设计方案图，并等待用户明确确认后再进入 Figma 还原；禁止用 SVG、HTML/CSS、Canvas 或代码绘图替代方案图。
 - 最终 Figma 产物必须是可编辑、结构化、符合产品设计规范的设计稿，不能用整张截图粘贴替代。
 
 ## 预期执行流程

@@ -7,6 +7,11 @@
 ```text
 请生成一张产品 UI 设计方案图。
 
+生成方式：
+- 必须使用 image gen 指令生成 PNG/JPEG/WebP 等位图方案图。
+- 禁止使用 SVG、HTML/CSS、Canvas、Figma shape 脚本或任何矢量/代码绘图方式生成方案图。
+- 禁止把 SVG 再转成 PNG 后冒充 image gen 方案图；方案图源头必须是位图 image generation。
+
 需求：
 {request_summary}
 
@@ -34,6 +39,7 @@
 
 约束：
 - 这是方案图，不是最终 Figma 交付物。
+- 方案图必须是 image gen 位图输出，不得是 SVG 或代码绘图输出。
 - 使用真实产品 UI 的信息层级、布局节奏和间距。
 - 文本必须可读，不要生成无意义占位文案，除非需求明确要求。
 - 保持与现有产品设计系统兼容。

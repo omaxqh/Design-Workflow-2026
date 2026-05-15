@@ -36,6 +36,8 @@ runs/YYYYMMDD-HHMM-short-slug.json
     "prompt": "",
     "referenceImages": [],
     "imagePathOrUrl": "",
+    "outputType": "bitmap_png | bitmap_jpeg | bitmap_webp | not_generated",
+    "generationMethod": "image_gen",
     "userConfirmation": "not_required | pending | confirmed | regenerate | revise",
     "visualAnchors": [],
     "decorativeAssetCandidates": [],
@@ -71,7 +73,19 @@ runs/YYYYMMDD-HHMM-short-slug.json
     "visualMatch": "pass | fail | not_required",
     "assets": "pass | fail | not_required",
     "specConstraintsApplied": "pass | fail | not_required",
-    "visualAnchorsCompared": "pass | fail | not_required"
+    "pageSpecMechanicalCheck": "pass | fail | not_required",
+    "visualAnchorsCompared": "pass | fail | not_required",
+    "specConstraintEvidence": [
+      {
+        "category": "fontSize | color | spacing | padding | margin | radius | stroke | shadow | size | fixedLayout",
+        "nodeId": "",
+        "specValue": "",
+        "actualValue": "",
+        "verificationMethod": "figma_node_property | variable_binding | script_measurement | screenshot_measurement",
+        "result": "pass | fail",
+        "fixAction": ""
+      }
+    ]
   },
   "handoffNotes": ""
 }
@@ -125,11 +139,18 @@ runs/YYYYMMDD-HHMM-short-slug.json
 
 预期内容：
 
+- 目标页面章节，例如 `Page02·列表页`、`Page03·详情页` 或 `Page04·下单页`。
+- 必须提取为 `pageSpecConstraints` 的硬性数值：模块尺寸、圆角、底色或渐变、内边距、外边距、元素间距、字号、文字颜色、描边、阴影和固定布局规则。
 - 页面模块顺序和信息层级。
 - 局部栅格行为。
-- 模块间距。
 - 当前页面组件使用方式。
 - 页面专属图片和图标风格。
+
+使用要求：
+
+- 已有页面新增模块和局部布局匹配时，页面级规范是最终自检的硬规则源。
+- 校验时优先读取 Figma 节点属性、变量绑定或脚本量测结果；截图目测只用于辅助判断布局、裁切、重叠和整体视觉差距。
+- 每个硬性数值都必须在 `selfCheck.specConstraintEvidence` 中记录规范值、实际值、目标节点、验证方式和结论。
 
 ### Figma 上下文
 
@@ -146,6 +167,13 @@ runs/YYYYMMDD-HHMM-short-slug.json
 ### Image Gen 参考素材
 
 仅在新增模块或新增页面，且视觉方向需要参考时使用。
+
+方案图生成产物要求：
+
+- 必须通过 image gen 指令直接生成 PNG、JPEG 或 WebP 等位图。
+- 禁止使用 SVG、HTML/CSS、Canvas、Figma shape 脚本、手写矢量或任何代码绘图方式生成方案图。
+- 禁止把 SVG 或代码绘图产物导出/截图为 PNG 后记录为方案图。
+- 运行记录必须写入 `proposalImage.generationMethod: "image_gen"` 和 `proposalImage.outputType`；非位图或来源不明时，`generate_design_image` 视为失败。
 
 默认索引：
 
