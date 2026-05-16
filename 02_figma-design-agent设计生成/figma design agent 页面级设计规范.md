@@ -1,5 +1,9 @@
 # figma design Agent 页面级设计规范
 
+## figma还原要求
+- 优先使用自动布局
+- 画板不要裁切内容
+
 ## Page02·列表页
 
 Figma 原页面：
